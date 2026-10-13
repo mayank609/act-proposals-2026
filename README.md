@@ -13,7 +13,7 @@ Install [Tectonic](https://tectonic-typesetting.github.io), then:
 
 ```sh
 ./build.sh          # all proposals
-./build.sh dl       # one proposal -> pdf/dl.pdf
+./build.sh 009DL_dl # one proposal -> pdf/009DL_dl.pdf
 ```
 
-For a new proposal, copy `template/template.tex` into `tex/`.
+For a new proposal, copy `template/template.tex` into `tex/` as `<number>_<name>.tex` (e.g. `009DL_dl.tex`).
