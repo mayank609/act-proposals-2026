@@ -1,0 +1,658 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[letterpaper,top=0.7in,bottom=0.9in,left=1in,right=1in]{geometry}
+\IfFileExists{gelasio.sty}{\usepackage{gelasio}}{\usepackage{charter}}
+\usepackage[scaled=0.92]{helvet}
+\usepackage[T1]{fontenc}
+\usepackage{tfrupee}
+\usepackage{graphicx,array,longtable,enumitem,xcolor,multirow}
+\graphicspath{{../assets/}}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\footnotesize Prashant Srivastav \hspace{1.5cm} Dr. Hardik Jain}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\setlist{nosep,leftmargin=2.2em}
+\setlist[itemize]{label=\textbullet}
+
+\newcommand{\rs}{{\rupee}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+\newcommand{\GSname}{Prashant Srivastav}
+\newcommand{\PresName}{Rudra Gupta}
+\newcommand{\FAname}{Dr. Hardik Jain}
+\newcommand{\ADname}{Prof. Pranay Ranjan}
+\newcommand{\Deanname}{Dr. Rajlaxmi Chouhan}
+
+\newcommand{\society}[1]{\par\bigskip{\sffamily\bfseries\large #1}\par}
+\newcommand{\subhead}[1]{\par{\bfseries #1}\par}
+\newcommand{\annexure}[2]{\clearpage{\Large\bfseries Annexure #1}\qquad{\Large #2}\par\medskip}
+\newcommand{\subannexure}[2]{\par\medskip\hspace*{2em}{\large\bfseries Annexure #1}\qquad{\large #2}\par}
+\newcommand{\signature}[3]{%
+  \begin{minipage}[t]{0.45\textwidth}\raggedright
+  \vspace{1.2cm}{\bfseries #1}\\ #2\\ #3\\ IIT Jodhpur\end{minipage}}
+
+\begin{document}
+\pagestyle{fancy}
+
+%================ LETTERHEAD ================
+\begin{minipage}[c]{0.2\textwidth}
+  \includegraphics[width=1.05in]{iitj_logo.png}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.78\textwidth}\raggedleft
+  {\Large\bfseries General Secretary}\\
+  {\Large\bfseries Academic, Career \& Technology Council}\\
+  {\bfseries Indian Institute of Technology Jodhpur}\\
+  NH-65, Nagaur Road, Karwar, 342037, INDIA\\
+  \textit{Phone: 8299322238}\ \ \textbar\ \textit{E-mail: \textcolor{blue}{\href{mailto:gensecy_act@iitj.ac.in}{gensecy\_act@iitj.ac.in}}}
+\end{minipage}
+\par\vspace{2pt}\noindent\rule{\textwidth}{0.8pt}\par
+
+{\bfseries \GSname}\hfill{\bfseries IITJ/ACT/26-27/GS/011}\\
+General Secretary, ACT Council\hfill Date: 23/09/2026
+
+{\bfseries To: Dean (Student Affairs), IIT Jodhpur}\\
+{\bfseries Through}:
+\begin{itemize}
+  \item Associate Dean (Student Affairs)
+  \item Faculty Advisor, ACT Council
+  \item President, Student Gymkhana
+\end{itemize}
+
+{\bfseries Subject: Proposal for ACT Council budget for the AY 2026-27}
+
+Respected Ma'am,
+
+This proposal details the overall budgetary plans for various technical societies under the Academic, Career \& Technology (ACT) Council, as well as allied events and common requirements under the purview of the ACT Council, for the Academic Year 2026-27.
+
+The {\bfseries 9 technical societies} are:
+\begin{enumerate}
+  \item Robotics Society
+  \item RAID (AI Society)
+  \item DevlUp Labs (Development Society)
+  \item Product Society
+  \item Boltheads (Automobile Society)
+  \item Quant Society
+  \item PSOC (Programming Society)
+  \item Nexus (Astronomy Society)
+  \item Creara (Game Development Society)
+\end{enumerate}
+
+Apart from the 9 technical societies, the {\bfseries Career Development Cell (CDC)} and {\bfseries Academics} also fall under the ACT Council.
+
+The overall budget summary is given below, followed by the individual Society details and their expenditure plans for the AY 2026-27. I request your approval for the overall ACT Council budget breakdown, so as to begin the actual procurements at the earliest.
+
+%================ BUDGET SUMMARY ================
+\clearpage
+\subhead{Budget Summary}
+\begin{longtable}{|L{0.34\textwidth}|R{0.18\textwidth}|R{0.18\textwidth}|R{0.18\textwidth}|}
+\hline
+\textbf{Budget Head} & \textbf{Recurring} & \textbf{Non-Recurring} & \textbf{Total}\\ \hline
+Robotics Society & \rs2,19,620 & \rs3,53,000 & \rs5,72,620\\ \hline
+RAID & \rs1,10,000 & \rs1,14,900 & \rs2,24,900\\ \hline
+DevlUp Labs & \rs1,76,250 & \rs36,000 & \rs2,12,250\\ \hline
+Product Society & \rs31,000 & -- & \rs31,000\\ \hline
+Boltheads & \rs63,800 & \rs1,48,020 & \rs2,11,820\\ \hline
+Quant Society & \rs30,000 & -- & \rs30,000\\ \hline
+PSOC & \rs84,000 & -- & \rs84,000\\ \hline
+Nexus & \rs80,000 & \rs1,55,550 & \rs2,35,550\\ \hline
+Creara & \rs10,000 & \rs40,000 & \rs50,000\\ \hline
+Career Development Cell (CDC) & \rs20,000 & -- & \rs20,000\\ \hline
+Academics & \rs25,000 & -- & \rs25,000\\ \hline
+Miscellaneous & \rs1,00,000 & -- & \rs1,00,000\\ \hline
+\textbf{Total} & \textbf{\rs9,49,670} & \textbf{\rs8,47,470} & \textbf{\rs17,97,140}\\ \hline
+\end{longtable}
+
+Hence, I humbly request your approval for the overall budget of the ACT Council at an estimated cost of Rs. 17,97,140 (Rs. 9,49,670 [Recurring] + Rs. 8,47,470 [Non-recurring]), for the Academic Year 2026-27.
+
+%================ 1. ROBOTICS ================
+\clearpage
+\society{1.\ \ Robotics Society}
+
+The Robotics Society of IIT Jodhpur is a community of tinkerers committed to fostering a culture of hands-on innovation in both hardware and software across diverse domains such as autonomous systems, drones, automation and IoT, CAD and additive manufacturing, electronics, etc. The Society fosters technology development and research in areas that have major impact in real-world industry and society.
+
+\subhead{Achievements}
+\begin{itemize}
+  \item \textbf{Inter IIT Tech Meet:} Bronze in ISRO PS (13.0); 6\textsuperscript{th} in Eternal Robotics PS (14.0).
+  \item Finalists, DD Robocon 2026; Top 20, ISRO IRoC-U 2024.
+\end{itemize}
+
+\subhead{Activities Ongoing \& Planned}
+\begin{longtable}{|L{0.25\textwidth}|L{0.40\textwidth}|C{0.17\textwidth}|C{0.06\textwidth}|}
+\hline
+\textbf{Initiative} & \textbf{Description} & \textbf{Budgetary Requirement} & \textbf{Type}\\ \hline
+DD Robocon Grand Finale 2026 & The Robotics Society qualified as finalists for the DD Robocon 2026 Grand Finale; expenses incurred towards participation (utilised). & \rs59,000 (utilised) & R\\ \hline
+DD Robocon 2027 & DD Robocon is a prestigious international robotics competition with problem statements in various domains across mechanics, electronics and design. & \rs80,000 & R\\ \hline
+E2E Networks Compute Credits & \$200 worth of GPU cloud credits to run large-scale RL and DL models, and simulations on industry-standard platforms like NVIDIA Isaac Sim. & \rs20,000 & R\\ \hline
+Components \& Consumables & Batteries, breadboards, jumper wires, solder, ball bearings, aluminium sheet and pipes, SD cards, servos, encoders and basic tools for Society projects. & \rs60,620 & R\\ \hline
+Equipment Procurement & Jetson Orin Nano, Holybro X500 and Pixhawk drone kits, Raspberry Pi, Cytron motors and drivers, chargers, Radiomaster transmitters, and Pluto X kits for swarm robotics. & \rs3,53,000 & NR\\ \hline
+Total & & \textbf{\large\rs5,72,620} & \\ \hline
+\end{longtable}
+
+\textbf{Recurring: \rs2,19,620 \quad Non-Recurring: \rs3,53,000}
+
+\textbf{Detailed bifurcation is attached in Annexure I}
+
+%================ 2. RAID ================
+\clearpage
+\society{2.\ \ RAID}
+
+RAID (Realm of AI and Data) is the AI society of IIT Jodhpur focused on advancing AI education, research, and awareness. We aim to build a vibrant community that explores foundational concepts, state-of-the-art techniques, and real-world applications of AI and data science. Through hands-on projects, research collaborations, sessions, and mentorship, we empower students to dive deep into AI, contribute to innovative solutions, and grow as researchers and practitioners in the field.
+
+\subhead{Achievements}
+\begin{itemize}
+  \item \textbf{Inter IIT Tech Meet 14.0:} Gold in Pathway \& Arista PS, Silver in GenuityIO PS.
+  \item \textbf{Inter IIT Tech Meet 13.0:} 6\textsuperscript{th} in Pathway \& Dream11 PS.
+\end{itemize}
+
+\subhead{Activities Ongoing \& Planned}
+\begin{longtable}{|L{0.25\textwidth}|L{0.40\textwidth}|C{0.17\textwidth}|C{0.06\textwidth}|}
+\hline
+\textbf{Initiative} & \textbf{Description} & \textbf{Budget Requirement} & \textbf{Type}\\ \hline
+Guest lectures and Industry sessions & Sessions with academia people working at universities and industry professionals (travel, accommodation and token of respect). & \rs15,000 & R\\ \hline
+24 Hour ML Kaggle Hackathon & A themed 24-hour Kaggle-style machine learning hackathon on real-world datasets encouraging innovation and impactful solutions, planned between end of January and start of February. & \rs25,000 & R\\ \hline
+Server Storage & NVMe SSD for model weights, environments and project data. & \rs15,000 & NR\\ \hline
+Mac Mini (M6 chip) & Dedicated Apple Silicon machine for local LLM inference and on-device ML (MLX / Core ML), hosting always-on agentic AI pipelines and project demos, reducing dependence on paid cloud credits. & \rs99,900 & NR\\ \hline
+Software \& Compute Credits & OpenAI, Vast.ai and cloud (GCP/AWS) credits for LLM-based projects, large-scale DL experiments and deployment of Society and Inter-IIT projects. & \rs70,000 & R\\ \hline
+Total & & \textbf{\rs2,24,900} & \\ \hline
+\end{longtable}
+
+\textbf{Recurring: \rs1,10,000 \quad Non-Recurring: \rs1,14,900}
+
+\textbf{Detailed bifurcation is attached in Annexure II}
+
+%================ 3. DEVLUP ================
+\clearpage
+\society{3.\ \ DevlUp Labs}
+
+DevlUp Labs is the Open Source Development Community of IIT Jodhpur committed to fostering a culture of collaborative software development, upstream contributions to open-source ecosystems, and practical learning of computer science fundamentals. We enable students to work on impactful software projects, contribute to real-world repositories, and grow as developers through structured programs, sessions, and collaborative initiatives.
+
+\subhead{Achievements}
+\begin{itemize}
+  \item 5 GSoC'26 and 4 Summer of Bitcoin'26 selections (second-years).
+  \item \textbf{Inter IIT Tech Meet 14.0:} 2 Gold, 1 Silver; 8\textsuperscript{th} overall among 23 IITs.
+\end{itemize}
+
+\subhead{Activities Ongoing \& Planned}
+{\small
+\begin{longtable}{|L{0.25\textwidth}|L{0.40\textwidth}|C{0.17\textwidth}|C{0.06\textwidth}|}
+\hline
+\textbf{Initiative} & \textbf{Description} & \textbf{Budget Requirement} & \textbf{Type}\\ \hline
+Summer of Code \& Winter of Code & Large-scale open-source development programs with mentored projects across domains such as Computer Networks, Peer-to-Peer Systems, Web Applications, and AI Applications. GCP deployment \& compute for the projects, along with project completion goodies for mentors and mentees. & \rs10,000 & R\\ \hline
+DevlUp Hackathon & A themed hackathon encouraging innovation and impactful solutions: prize pool for the top 3 projects, along with logistics for conducting the hackathon. & \rs35,000 & R\\ \hline
+External Hackathon Participation \& Guest Lectures & Basic costs (travel, accommodation) to support students participating in external competitions and hackathons, and for inviting and hosting tech figures for lectures and sessions. & \rs40,000 & R\\ \hline
+Cloud, APIs \& Tools & Google Cloud credits, LLM API credits for agent-based projects and Inter-IIT problem statement development, and Vercel Pro for hosting and deploying Society projects. & \rs68,000 & R\\ \hline
+Learning \& Publishing & KodeKloud Pro for hands-on DevOps and cloud learning, App Store fee for publishing apps, and the DevlUp portfolio website domain. & \rs23,250 & R\\ \hline
+Low-level Development Hardware & Raspberry Pi 5 (8GB) kits for the purpose of low-level development. & \rs36,000 & NR\\ \hline
+Total & & \textbf{\rs2,12,250} & \\ \hline
+\end{longtable}}
+
+\textbf{Recurring: \rs1,76,250 \quad Non-Recurring: \rs36,000}
+
+\textbf{Detailed bifurcation is attached in Annexure III}
+
+%================ 4. PRODUCT ================
+\clearpage
+\society{4.\ \ Product Society}
+
+The Product Society is the product-focused society of IIT Jodhpur, dedicated to advancing education and awareness in product management, design, and development. We aim to build a vibrant community that explores the foundational concepts at the intersection of Business, Technology, and User Experience (UX). Through hands-on projects, case study competitions, collaborative cohorts, workshops, and mentorship from industry leaders, we empower students to dive deep into the product lifecycle, contribute to innovative solutions, and grow as practitioners and leaders in the field.
+
+\subhead{Achievements}
+\begin{itemize}
+  \item \textbf{Inter IIT Tech Meet:} 6\textsuperscript{th} in Adobe PS (14.0); 6\textsuperscript{th} in Dream11 PS (13.0).
+  \item Organized ``Prod-Eezy'', a PM cohort with BITS, IIT Kanpur and IIM Rohtak.
+\end{itemize}
+
+\subhead{Activities Ongoing \& Planned}
+\begin{longtable}{|L{0.25\textwidth}|L{0.40\textwidth}|C{0.17\textwidth}|C{0.06\textwidth}|}
+\hline
+\textbf{Initiative} & \textbf{Description} & \textbf{Budget Requirement} & \textbf{Type}\\ \hline
+\textbf{Pitch Deck Competition} & Pitch-deck making competition for freshers based on an industry-based problem (Semester 1). & \rs5,000 & R\\ \hline
+\textbf{Pitch Rush} & Presenting product ideas and convincing judges of their value, feasibility, and market potential (Semester 2). & \rs8,000 & R\\ \hline
+\textbf{AI-Product Management Hackathon} & 2-day hackathon based on AI-based product management (Semester 2). & \rs10,000 & R\\ \hline
+\textbf{Prototype Competition} & New product/prototype development based on a product problem (Summer break). & \rs8,000 & R\\ \hline
+\textbf{Total} & & \textbf{\rs31,000} & \\ \hline
+\end{longtable}
+
+\textbf{Recurring: \rs31,000 \quad Non-Recurring: --}
+
+%================ 5. BOLTHEADS ================
+\clearpage
+\society{5.\ \ Boltheads}
+
+Boltheads is the Automobile Society of IITJ, focused to create a community of enthusiasts who can work together and share knowledge. The Society's main activity includes holding sessions to teach about vehicles, workshops for software and tool training, essentially preparing students to be able to take part in the competitions that the Society participates in such as FMAE DKDC, BAJA, SAE SUPRA, SAE Aerothon, etc.
+
+\subhead{Activities Ongoing \& Planned}
+\begin{longtable}{|L{0.25\textwidth}|L{0.40\textwidth}|C{0.17\textwidth}|C{0.06\textwidth}|}
+\hline
+\textbf{Initiative} & \textbf{Description} & \textbf{Budget Required} & \textbf{Type}\\ \hline
+Go-Kart Build & Frame, transmission \& drive, steering system, brakes and remaining KTM engine components for the Society's go-kart. & \rs85,000 & NR\\ \hline
+SAE Aerothon & UAV building competition -- participation. & \rs35,000 & R\\ \hline
+RC UAV Construction -- Components & Flight controller, BLDC motors, ESC, batteries and charger, GPS, video link, RC transmitter, servos, etc.\ for the Aerothon UAV. & \rs63,020 & NR\\ \hline
+RC UAV Construction -- Consumables & PLA / LW-PLA filament, carbon fibre tubes, propellers, balsa board, wiring, WD-40 and adapters for the Aerothon UAV. & \rs18,800 & R\\ \hline
+Prize Money \& F1 Pass & Prize money and F1 pass for Society events. & \rs10,000 & R\\ \hline
+\textbf{Total} & & \textbf{\rs2,11,820} & \\ \hline
+\end{longtable}
+
+\textbf{Recurring: \rs63,800 \quad Non-Recurring: \rs1,48,020}
+
+\textbf{Detailed bifurcation is attached in Annexure IV}
+
+%================ 6. QUANT ================
+\clearpage
+\society{6.\ \ Quant Society}
+
+The Quant Society is the Quantitative Finance Society of IIT Jodhpur, focused on building a community of students passionate about quantitative finance, algorithmic trading, and financial data science. The Society aims to bridge the gap between theoretical finance and its real-world applications by engaging members in hands-on projects, research discussions, and workshops. Our activities include developing and backtesting trading strategies, conducting sessions on quantitative methods and computational tools, and collaborating on problem-solving challenges. Through these initiatives, the Society strives to equip students with the analytical and technical skills required to excel in the evolving landscape of quantitative trading and financial research.
+
+\subhead{Achievements}
+\begin{itemize}
+  \item \textbf{Inter IIT Tech Meet Quant PS:} Rank 8 (14.0); Rank 11 (13.0).
+  \item Top 10, Trilemma Beta Forecasting Tournament.
+\end{itemize}
+
+\subhead{Activities Ongoing \& Planned}
+\begin{longtable}{|C{0.25\textwidth}|C{0.40\textwidth}|C{0.17\textwidth}|C{0.06\textwidth}|}
+\hline
+\textbf{Initiative} & \textbf{Description} & \textbf{Budget Requirement} & \textbf{Type}\\ \hline
+\textbf{Intra-College Quant Competition} & A 2--3 week trading competition where teams design and backtest algorithmic strategies, fostering collaboration and practical application of quantitative concepts. & \textbf{\rs10,000 (as prize money)} & R\\ \hline
+\textbf{Data API, Forward Testing and Compute Units} & Provides data APIs for alpha research and development, along with forward-testing infrastructure and compute resources to support strategy validation. & \textbf{\rs20,000 (information and resources)} & R\\ \hline
+\textbf{Total} & & \textbf{\rs30,000} & \\ \hline
+\end{longtable}
+
+\textbf{Recurring: \rs30,000 \quad Non-Recurring: --}
+
+%================ 7. PSOC ================
+\clearpage
+\society{7.\ \ PSOC}
+
+The Programming Society is the hub for competitive programmers at IIT Jodhpur to collaborate, learn, and grow together. We aim to strengthen the programming culture by organizing topic specific sessions, coding contests, and post contest discussions that help members refine their problem solving skills. Through these initiatives, we provide a platform for students to upskill, exchange ideas, and excel in the world of competitive programming.
+
+\subhead{Achievements}
+\begin{itemize}
+  \item \textbf{ICPC World Finals 2023} (Team Pratyahara).
+  \item \textbf{ICPC 2022:} 6\textsuperscript{th} at Asia West Continental Finals; 5\textsuperscript{th} at Kanpur Regionals.
+\end{itemize}
+
+\subhead{Activities Ongoing \& Planned}
+\begin{longtable}{|C{0.25\textwidth}|C{0.40\textwidth}|C{0.17\textwidth}|C{0.06\textwidth}|}
+\hline
+\textbf{Initiative} & \textbf{Description} & \textbf{Budget Requirement} & \textbf{Type}\\ \hline
+\textbf{Dinner Time Contest} & The Society's offline flagship event: a time-bound programming contest testing logical thinking, problem-solving speed, and ability to perform under pressure, preparing students for placement tests. Prize pool for two editions (\rs3,000 / \rs2,000 / \rs1,000 for the top 3), along with stationery for the contests. & \textbf{7500*2\newline = Rs. 15,000} & R\\ \hline
+\textbf{ICPC} & Registration fees and travel reimbursement for teams representing IIT Jodhpur at the ICPC Regionals, covering round-trip travel from Jodhpur and local transportation. & \textbf{Rs. 49,000} & R\\ \hline
+\textbf{Programming Course} & A structured programming course for students covering data structures, algorithms and competitive programming (course platform / instructor costs). & \textbf{Rs. 20,000} & R\\ \hline
+\textbf{Total} & & \textbf{\rs84,000} & \\ \hline
+\end{longtable}
+
+\textbf{Recurring: \rs84,000 \quad Non-Recurring: --}
+
+%================ 8. NEXUS ================
+\clearpage
+\society{8.\ \ Nexus}
+
+NEXUS is IIT Jodhpur's official Society for astronomy and space technology, open to students from all disciplines. It promotes hands-on learning through stargazing sessions, astrophotography, expert talks, and space-related projects. The Society fosters scientific thinking, teamwork, and curiosity, helping students connect classroom knowledge with real-world exploration and inspiring interest in space science and technology.
+
+\subhead{Activities Ongoing \& Planned}
+\begin{longtable}{|L{0.25\textwidth}|L{0.40\textwidth}|L{0.17\textwidth}|C{0.06\textwidth}|}
+\hline
+\textbf{Initiative} & \textbf{Description} & \textbf{Budget Requirement} & \textbf{Type}\\ \hline
+\textbf{IN-SPACe CANSAT and Model Rocketry Competition 2027} & This is the Society's flagship competition, aimed at giving students hands-on experience in satellite design and launch systems. In previous editions, our Society has successfully reached the final round, and we aim to continue this achievement in the upcoming edition. & \textbf{\rs70,000} & R\\ \hline
+\textbf{Society Competitions} & Knowledge-based events such as the Astronomy Quiz to promote learning and awareness in astronomy, with prize money to encourage participation. & \textbf{\rs10,000} & R\\ \hline
+\textbf{Observation \& Astrophotography Equipment} & Power supply, planetary camera and telescope for sessions and astrophotography. & \textbf{\rs1,55,550} & NR\\ \hline
+\textbf{Total} & & \textbf{\rs2,35,550} & \\ \hline
+\end{longtable}
+
+\textbf{Recurring: \rs80,000 \quad Non-Recurring: \rs1,55,550}
+
+\textbf{Detailed bifurcation is attached in Annexure V}
+
+%================ 9. CREARA ================
+\clearpage
+\society{9.\ \ Creara}
+
+Creara is the Game Development Society of IIT Jodhpur committed to fostering a culture of creativity, technical proficiency, and interdisciplinary collaboration in the field of interactive media. The society enables students to explore the art and science of game design by developing original projects, conducting workshops, and engaging in collaborative initiatives. Through these activities, Creara aims to nurture a community of developers, artists, and storytellers capable of creating immersive and impactful gaming experiences.
+
+\subhead{Activities Ongoing \& Planned}
+\begin{longtable}{|L{0.25\textwidth}|L{0.40\textwidth}|C{0.17\textwidth}|C{0.06\textwidth}|}
+\hline
+\textbf{Initiatives} & \textbf{Description} & \textbf{Budget} & \textbf{Type}\\ \hline
+Game Jam & A collaborative event where participants design, develop, and publish complete games under creative constraints. & \rs10,000 (as incentives) & R\\ \hline
+Game Assets & Good quality assets (environments and avatars) to improve game quality, depending on the theme of game jams / Tech Meet. & \rs10,000 & NR\\ \hline
+Graphic Tablet & Makes it easier to draw and create custom 2D sprites for game development. & \rs30,000 & NR\\ \hline
+Total & & \textbf{\rs50,000} & \\ \hline
+\end{longtable}
+
+\textbf{Recurring: \rs10,000 \quad Non-Recurring: \rs40,000}
+
+%================ 10. CDC ================
+\clearpage
+\society{10.\ \ Career Development Cell (CDC)}
+
+The Career Development Cell (CDC) functions under the ACT Council to support students in their career preparation through mock interviews, guidance sessions and allied career-oriented activities.
+
+\subhead{Activities Ongoing \& Planned}
+\begin{longtable}{|L{0.25\textwidth}|L{0.40\textwidth}|C{0.17\textwidth}|C{0.06\textwidth}|}
+\hline
+\textbf{Initiative} & \textbf{Description} & \textbf{Budget Requirement} & \textbf{Type}\\ \hline
+Career Guidance Sessions & Sessions by industry professionals, alumni and career experts on placements, internships, higher studies and career paths; covers speakers' travel, accommodation and token of respect. & \rs20,000 & R\\ \hline
+Total & & \textbf{\rs20,000} & \\ \hline
+\end{longtable}
+
+\textbf{Recurring: \rs20,000 \quad Non-Recurring: --}
+
+%================ 11. ACADEMICS ================
+\clearpage
+\society{11.\ \ Academics}
+
+Academics functions under the ACT Council to represent students on academic matters, coordinating with faculty through class committees, addressing course-related concerns of students, and conducting the Student Representative (SR) elections.
+
+\subhead{Activities Ongoing \& Planned}
+\begin{longtable}{|L{0.25\textwidth}|L{0.40\textwidth}|C{0.17\textwidth}|C{0.06\textwidth}|}
+\hline
+\textbf{Initiative} & \textbf{Description} & \textbf{Budget Requirement} & \textbf{Type}\\ \hline
+Class Committee Meetings & Refreshments and miscellaneous expenses for class committee meetings held between faculty and student representatives through the year. & \rs5,000 & R\\ \hline
+SR Elections & Conduct of Student Representative elections, covering printing, stationery and logistics. & \rs20,000 & R\\ \hline
+Total & & \textbf{\rs25,000} & \\ \hline
+\end{longtable}
+
+\textbf{Recurring: \rs25,000 \quad Non-Recurring: --}
+
+%================ MISCELLANEOUS ================
+\clearpage
+\society{Miscellaneous}
+
+\begin{longtable}{|L{0.25\textwidth}|L{0.40\textwidth}|C{0.17\textwidth}|C{0.06\textwidth}|}
+\hline
+\textbf{Initiative} & \textbf{Description} & \textbf{Budget Requirement} & \textbf{Type}\\ \hline
+Contingency & Miscellaneous reserve for handling contingencies under ACT & \rs1,00,000 & R\\ \hline
+Total & & \textbf{\rs1,00,000} & \\ \hline
+\end{longtable}
+
+\textbf{Recurring: \rs1,00,000 \quad Non-Recurring: --}
+
+%================ INDEX ================
+\clearpage
+{\large\bfseries\underline{Index of supporting documents}}\par
+\setlength{\parskip}{2pt}
+{\bfseries Annexure I :} Robotics Society -- Detailed bifurcation
+\begin{itemize}
+  \item {\bfseries Annexure I-A :} Competition registration \& participation
+  \item {\bfseries Annexure I-B :} Equipment procurement
+  \item {\bfseries Annexure I-C :} Compute credits, components \& consumables
+\end{itemize}
+{\bfseries Annexure II :} RAID -- Detailed bifurcation\par
+{\bfseries Annexure III :} DevlUp Labs -- Detailed bifurcation\par
+{\bfseries Annexure IV :} Boltheads -- Detailed bifurcation\par
+{\bfseries Annexure V :} Nexus -- Detailed bifurcation
+\begin{itemize}
+  \item {\bfseries Annexure V-A :} IN-SPACe CANSAT and Model Rocketry Competition
+  \item {\bfseries Annexure V-B :} Society competitions
+  \item {\bfseries Annexure V-C :} Observation \& astrophotography equipment
+\end{itemize}
+\setlength{\parskip}{6pt}
+
+%================ ANNEXURE I ================
+\annexure{I}{Robotics Society}
+\subannexure{I-A}{Competition registration \& participation}
+
+\textbf{DD Robocon:}\\
+DD Robocon India is the national stage of the prestigious Asian-Oceanian college robotics competition (ABU Robocon). It is considered as one of the most prestigious competitions in the domain of automation and robotics. The Robotics Society were finalists at DD Robocon last year.
+
+We require approval for registration and representation of the institute at this event.
+
+\begin{longtable}{|C{0.24\textwidth}|C{0.13\textwidth}|C{0.1\textwidth}|C{0.13\textwidth}|C{0.2\textwidth}|}
+\hline
+Name & Rate & Quantity & Total & Recurring/Non Recurring\\ \hline
+Grand Finale 2026 (utilised) & \rs59,000 & 1 & \rs59,000 & Recurring\\ \hline
+DD Robocon 2027 -- Registration and Accommodation Fees & \rs80,000 & 1 & \rs80,000 & Recurring\\ \hline
+\end{longtable}
+
+\subannexure{I-B}{Equipment procurement (Non-Recurring)}
+{\small
+\begin{longtable}{|C{0.03\textwidth}|L{0.2\textwidth}|L{0.16\textwidth}|C{0.04\textwidth}|R{0.08\textwidth}|R{0.09\textwidth}|L{0.23\textwidth}|}
+\hline
+\# & \textbf{Item} & \textbf{Specifications} & \textbf{Qty} & \textbf{Rate} & \textbf{Cost} & \textbf{Justification}\\ \hline
+\endhead
+1 & NVIDIA Jetson Orin Nano & Orin Nano & 1 & \rs55,000 & \rs55,000 & Computer board for projects in Inter-IIT, RoboCon, IRoC, etc \\ \hline
+2 & Holybro X500 Kit & - & 1 & \rs50,000 & \rs50,000 & Assembly and operation of autonomous/RC drones \\ \hline
+3 & PixHawk 6c mini combo kit & - & 1 & \rs35,000 & \rs35,000 & Assembly and operation of autonomous/RC drones \\ \hline
+4 & Raspberry Pi 4 & - & 1 & \rs20,000 & \rs20,000 & Microcontroller for projects in Inter-IIT, RoboCon, etc \\ \hline
+5 & Cytron Motor Driver (45A) & 10V-45V DC motor driver & 2 & \rs10,000 & \rs20,000 & To be used on Big projects such as ISRO Rover Challenge/Robocon \\ \hline
+6 & Cytron 12V DC Geared Motor & - & 3 & \rs10,000 & \rs30,000 & To be used on Big projects such as ISRO Rover Challenge/Robocon \\ \hline
+7 & IMAX B6AC Charger/Discharger 1-6 Cells & - & 4 & \rs2,750 & \rs11,000 & Power supply for mobile robots \\ \hline
+8 & Radiomaster Transmiter and Reciever & - & 2 & \rs11,000 & \rs22,000 & Operation of RC robots \\ \hline
+9 & Pluto X Advanced Programmable Kit & Pluto Guru package & 5 & \rs22,000 & \rs1,10,000 & Projects for swarm robotics \\ \hline
+\multicolumn{5}{|r|}{\textbf{TOTAL}} & \textbf{\rs3,53,000} & \\ \hline
+\end{longtable}}
+
+\subannexure{I-C}{Compute credits, components \& consumables (Recurring)}
+{\small
+\begin{longtable}{|C{0.03\textwidth}|L{0.2\textwidth}|L{0.16\textwidth}|C{0.04\textwidth}|R{0.08\textwidth}|R{0.09\textwidth}|L{0.23\textwidth}|}
+\hline
+\# & \textbf{Item} & \textbf{Specifications} & \textbf{Qty} & \textbf{Rate} & \textbf{Cost} & \textbf{Justification}\\ \hline
+\endhead
+1 & E2E Networks & \$200 worth of credits & -- & -- & \rs20,000 & Required to run large-scale RL and other DL models for projects requiring AI integration. Unable to currently run large-scale simulations on industry-standard platforms like NVIDIA Isaac Sim due to compute limitations. \\ \hline
+2 & Lipo Battery 3S (Orange) 1800mAh 40C & - & 5 & \rs2,250 & \rs11,250 & Power supply for mobile robots \\ \hline
+3 & Breadboard & 400 Tie Points Contacts, Solderless & 20 & \rs150 & \rs3,000 & Basic projects in electronics \\ \hline
+4 & Jumper Wire Set & M2M, F2M, F2F - (40+40+40) & 8 & \rs150 & \rs1,200 & Basic projects in electronics \\ \hline
+5 & Solder Wire & - & 10 & \rs200 & \rs2,000 & Basic projects in electronics \\ \hline
+6 & Ball Bearings Assortment & Custom Assortment including shafts & 1 & \rs3,000 & \rs3,000 & Basic Hardware \\ \hline
+7 & Screws & - & 1 & \rs100 & \rs100 & Basic Hardware \\ \hline
+8 & Aluminium 6061-T sheet & 8$\times$4 ft, 6 mm & 1 & \rs25,000 & \rs25,000 & Materials for big projects such as ISRO Rover Challenge/Robocon \\ \hline
+9 & Rectangular Aluminum Pipes T slot & 1m & 5 & \rs700 & \rs3,500 & Materials for big projects such as ISRO Rover Challenge/Robocon \\ \hline
+10 & SD Card & - & 8 & \rs500 & \rs4,000 & Used in raspberry Pi and 3D printer \\ \hline
+11 & SD Reader & - & 2 & \rs500 & \rs1,000 & To read SD cards used in 3D printing,etc \\ \hline
+12 & Glue Gun Sticks & - & 20 & \rs20 & \rs400 & Basic Tools \\ \hline
+13 & Precision Screwdriver Set & Precision Screwdriver Set for Electrical Tasks & 1 & \rs300 & \rs300 & Basic Tools \\ \hline
+14 & Allen Key Set & - & 2 & \rs160 & \rs320 & Basic Tools \\ \hline
+15 & Tape Measure & 5 m & 5 & \rs50 & \rs250 & Basic Tools \\ \hline
+16 & Tower Pro SG90 Mini Servo Motors & - & 10 & \rs100 & \rs1,000 & Basic Servos for Simple Projects \\ \hline
+17 & OE37 2-channel magnetic encoder & - & 10 & \rs430 & \rs4,300 & To be used on Big projects such as ISRO Rover Challenge/Robocon \\ \hline
+\multicolumn{5}{|r|}{\textbf{TOTAL}} & \textbf{\rs80,620} & \\ \hline
+\end{longtable}}
+
+\textbf{TOTAL RECURRING: \rs\ 2,19,620}\\
+\textbf{TOTAL NON-RECURRING: \rs\ 3,53,000}
+
+\textbf{TOTAL SOCIETY BUDGET: \rs\ 5,72,620}
+
+%================ ANNEXURE II ================
+\annexure{II}{RAID}
+{\small
+\begin{longtable}{|L{0.3\textwidth}|C{0.07\textwidth}|R{0.1\textwidth}|R{0.1\textwidth}|L{0.32\textwidth}|}
+\hline
+\centering\textbf{ITEM} & \textbf{QTY} & \textbf{RATE} & \textbf{TOTAL} & \centering\textbf{JUSTIFICATION}\tabularnewline \hline
+\multicolumn{5}{|c|}{\textbf{NON RECURRING}}\\ \hline
+\multicolumn{5}{|c|}{Server}\\ \hline
+NVMe SSD & 1 & 15,000 & 15,000 & Multiple projects, model weights and environments require a large amount of storage. We often run out of space and need to clear data every 6 months.\\ \hline
+Mac Mini (M6 chip) & 1 & 99,900 & 99,900 & Apple Silicon unified memory allows running quantised open-weight LLMs and ML workloads locally (MLX / Core ML) without per-token cloud costs. Will serve as an always-on host for agentic AI pipelines, WARP / Summer RAID projects and live demos, complementing the GPU server.\\ \hline
+\multicolumn{3}{|c|}{TOTAL} & 1,14,900 & \\ \hline
+\multicolumn{5}{|c|}{\textbf{RECURRING}}\\ \hline
+\multicolumn{5}{|c|}{Industry/Academia Sessions}\\ \hline
+OFFLINE (Travel + Accommodation + Token of Respect) & 1 & 15,000 & 15,000 & Approximated 15,000 budget for speaker. Includes their accommodation and food along with their travelling expenses.\\ \hline
+\multicolumn{5}{|c|}{Software}\\ \hline
+OpenAI Credits & 1 & 20\$/month *7 & 15,000 & 1. To allow Society members to integrate LLM models into real-world projects and harness the power of large language models in practical scenarios. 2. For the projects in the field of Agentic AI we need to use SOTA LLMs for research and other projects, especially for WARP and SOR.\\ \hline
+Vast.ai credits & 1 & 450*1\$ & 45,000 & Unable to finetune bigger models and run large scale DL experiments due to compute limitations, especially for RL and pretraining workloads. Unable to infer large 30B+ params models in bf16; issue came in ISRO PS last year.\\ \hline
+Cloud Computing Credits (GCP/AWS) & 1 & 10,000 & 10,000 & Cloud credits for deploying and hosting Society projects, APIs, web applications, and AI/ML services, and for deployment of Inter IIT projects.\\ \hline
+\multicolumn{5}{|c|}{24 Hour Hackathon}\\ \hline
+24 Hour ML Kaggle Hackathon & 1 & 25,000 & 25,000 & Prize money and goodies for the top-performing teams as well as refreshments for the participants of a 24-hour, Kaggle-style machine learning hackathon on real-world datasets and problem statements. To be conducted between the end of January and start of February.\\ \hline
+\multicolumn{3}{|c|}{TOTAL} & 1,10,000 & \\ \hline
+\multicolumn{3}{|c|}{\textbf{GRAND TOTAL}} & \textbf{2,24,900} & \\ \hline
+\end{longtable}}
+
+%================ ANNEXURE III ================
+\annexure{III}{DevlUp Labs}
+{\small
+\begin{longtable}{|L{0.22\textwidth}|C{0.06\textwidth}|R{0.09\textwidth}|R{0.09\textwidth}|C{0.07\textwidth}|L{0.34\textwidth}|}
+\hline
+\textbf{Item} & \textbf{Qty} & \textbf{Rate} & \textbf{Total} & \textbf{Type} & \textbf{Justification}\\ \hline
+\endhead
+\multicolumn{6}{|c|}{\textbf{Hackathons \& Participation}}\\ \hline
+DevlUp Hackathon Incentives & 1 & \rs25,000 & \rs25,000 & R & Prize pool for top 3 projects.\\ \hline
+DevlUp Hackathon Logistics & 1 & \rs10,000 & \rs10,000 & R & Logistics for conducting the hackathon: venue setup, refreshments and physical supplies to sustain intensive, multi-hour technical builds.\\ \hline
+External Hackathon Participation \& Guest Lectures & -- & -- & \rs40,000 & R & Basic costs only (travel, accommodation) to support students participating in external competitions and hackathons, and for inviting and hosting tech figures for lectures and sessions.\\ \hline
+\multicolumn{6}{|c|}{\textbf{Open Source Programs}}\\ \hline
+Summer of Code \& Winter of Code & 2 & \rs5,000 & \rs10,000 & R & GCP deployment \& compute for the mentored open-source projects of both programs (one per project sprint). Also includes project completion incentives for mentors and mentees (tentatively T-shirts).\\ \hline
+\multicolumn{6}{|c|}{\textbf{Cloud, APIs \& Tools}}\\ \hline
+Google Cloud Credits (Year Long) & 1 & \rs20,000 & \rs20,000 & R & For deployment, DB, VM, CI/CD workflows etc. Based on project requirements and network interfaces; projects may require extra compute, storage or APIs like GC-NLP, Translate, Geolocation.\\ \hline
+API Keys & 1 & -- & \rs30,000 & R & API credits for OpenAI, Claude and Gemini for agent-based projects and the Inter-IIT problem statement development process (bifurcation below).\\ \hline
+Vercel Pro & 1 & \rs18,000 & \rs18,000 & R & Hosting and deployment platform subscription for Society projects.\\ \hline
+\multicolumn{6}{|c|}{\textbf{Learning \& Publishing}}\\ \hline
+KodeKloud Pro & 1 & \rs8,250 & \rs8,250 & R & Hands-on DevOps and cloud learning platform subscription.\\ \hline
+App Store Fee & 1 & \rs10,000 & \rs10,000 & R & For deploying apps over the App Store.\\ \hline
+DevlUp Portfolio Domain & 1 & \rs5,000 & \rs5,000 & R & Domain for the DevlUp portfolio website.\\ \hline
+\multicolumn{6}{|c|}{\textbf{Hardware}}\\ \hline
+Raspberry Pi 5 (8GB) + SD Card + Cables & 2 & \rs18,000 & \rs36,000 & NR & For the purpose of low-level development.\\ \hline
+\multicolumn{3}{|r|}{\textbf{TOTAL}} & \textbf{\rs2,12,250} & \multicolumn{2}{l|}{}\\ \hline
+\end{longtable}}
+
+\par\noindent\begin{minipage}{\textwidth}
+\subhead{API Keys bifurcation}
+{\small
+\begin{tabular}{|L{0.2\textwidth}|L{0.3\textwidth}|R{0.1\textwidth}|L{0.3\textwidth}|}
+\hline
+\textbf{Layer / Role} & \textbf{Model Tier} & \textbf{Budget} & \textbf{Core Purpose}\\ \hline
+Primary Orchestration & Frontier models (flagship tier of Claude / GPT / Gemini) & \rs13,000 & Complex tool reasoning, DAG orchestration \& code synthesis\\ \hline
+Fast Sub-Agents \& Workers & Fast, low-cost models (lightweight tier of Claude / GPT / Gemini) & \rs10,000 & High-volume loop steps, web scraping, data extraction (150M+ tokens)\\ \hline
+Deep Reasoning \& Planners & Reasoning models (latest reasoning tier) & \rs4,000 & Multi-step task decomposition \& algorithmic logic\\ \hline
+Search \& Retrieval Tools & Web search APIs \& embedding models & \rs3,000 & Live web search queries \& vector database indexation\\ \hline
+\multicolumn{2}{|l|}{\textbf{Total Allocation}} & \textbf{\rs30,000} & \\ \hline
+\end{tabular}}
+\end{minipage}
+
+\textbf{TOTAL RECURRING: \rs\ 1,76,250}\\
+\textbf{TOTAL NON-RECURRING: \rs\ 36,000}
+
+\textbf{TOTAL SOCIETY BUDGET: \rs\ 2,12,250}
+
+%================ ANNEXURE IV ================
+\annexure{IV}{Boltheads}
+\begingroup\small\renewcommand{\arraystretch}{1.15}
+
+\begin{longtable}{|C{0.05\textwidth}|L{0.38\textwidth}|C{0.12\textwidth}|R{0.1\textwidth}|R{0.1\textwidth}|C{0.14\textwidth}|}
+\hline
+\textbf{1.} & \textbf{Go-Kart Build} & \textbf{Qty} & \textbf{Rate} & \textbf{Total} & \textbf{Type}\\ \hline
+1 & Go-kart frame & -- & -- & \rs45,000 & Non-Recurring \\ \hline
+2 & Transmission \& drive & -- & -- & \rs8,000 & Non-Recurring \\ \hline
+3 & Steering system & -- & -- & \rs5,000 & Non-Recurring \\ \hline
+4 & Brakes & -- & -- & \rs7,000 & Non-Recurring \\ \hline
+5 & KTM engine remaining components & -- & -- & \rs20,000 & Non-Recurring \\ \hline
+ & \textbf{TOTAL} & & & \textbf{\rs85,000} & \\ \hline
+\end{longtable}
+
+\begin{longtable}{|C{0.05\textwidth}|L{0.38\textwidth}|C{0.12\textwidth}|R{0.1\textwidth}|R{0.1\textwidth}|C{0.14\textwidth}|}
+\hline
+\textbf{2.} & \textbf{UAV Building Competition} & \textbf{Qty} & \textbf{Rate} & \textbf{Total} & \textbf{Type}\\ \hline
+1 & SAE Aerothon & 1 & \rs35,000 & \rs35,000 & Recurring \\ \hline
+ & \textbf{TOTAL} & & & \textbf{\rs35,000} & \\ \hline
+\end{longtable}
+
+\begin{longtable}{|C{0.05\textwidth}|L{0.38\textwidth}|C{0.12\textwidth}|R{0.1\textwidth}|R{0.1\textwidth}|C{0.14\textwidth}|}
+\hline
+\textbf{3.} & \textbf{RC UAV Construction} & \textbf{Qty} & \textbf{Rate} & \textbf{Total} & \textbf{Type}\\ \hline
+1 & Lightweight PLA (LW-PLA) & 2 kg & \rs1,800 & \rs3,600 & Recurring \\ \hline
+2 & Standard PLA & 2 kg & \rs3,600 & \rs7,200 & Recurring \\ \hline
+3 & WD-40 & 3 & \rs300 & \rs900 & Recurring \\ \hline
+4 & Carbon fibre tube (1 m) & 2 & \rs1,000 & \rs2,000 & Recurring \\ \hline
+5 & Battery (5500 + 3300 mAh) & 1 each & \rs8,000 & \rs8,000 & Non-Recurring \\ \hline
+6 & HD 1200TVL camera & 1 & \rs1,500 & \rs1,500 & Non-Recurring \\ \hline
+7 & Wirings & -- & \rs500 & \rs500 & Recurring \\ \hline
+8 & Balsa board & 1 & \rs1,200 & \rs1,200 & Recurring \\ \hline
+9 & Charger & 1 & \rs2,500 & \rs2,500 & Non-Recurring \\ \hline
+10 & Servo motor & 11 & \rs100 & \rs1,100 & Non-Recurring \\ \hline
+11 & BLDC motor & 3 & \rs8,000 & \rs24,000 & Non-Recurring \\ \hline
+12 & ESC (Electronic Speed Controller) & 1 & \rs5,000 & \rs5,000 & Non-Recurring \\ \hline
+13 & Servo control horns & 11 & \rs120 & \rs1,320 & Non-Recurring \\ \hline
+14 & Radiolink T8FB 2.4GHz 8CH RC Transmitter with R8EF & 1 & \rs6,000 & \rs6,000 & Non-Recurring \\ \hline
+15 & Pushrod & 11 & \rs100 & \rs1,100 & Non-Recurring \\ \hline
+16 & Video transmitter & 1 & \rs1,500 & \rs1,500 & Non-Recurring \\ \hline
+17 & Video receiver & 1 & \rs3,000 & \rs3,000 & Non-Recurring \\ \hline
+18 & Flight controller & 1 & \rs6,000 & \rs6,000 & Non-Recurring \\ \hline
+19 & GPS module & 1 & \rs2,000 & \rs2,000 & Non-Recurring \\ \hline
+20 & Propeller & 3 & \rs1,100 & \rs3,300 & Recurring \\ \hline
+21 & Bullet adapter & 1 & \rs100 & \rs100 & Recurring \\ \hline
+ & \textbf{TOTAL} & & & \textbf{\rs81,820} & \\ \hline
+\end{longtable}
+
+\begin{longtable}{|C{0.05\textwidth}|L{0.38\textwidth}|C{0.12\textwidth}|R{0.1\textwidth}|R{0.1\textwidth}|C{0.14\textwidth}|}
+\hline
+\textbf{4.} & \textbf{Society Events} & \textbf{Qty} & \textbf{Rate} & \textbf{Total} & \textbf{Type}\\ \hline
+1 & Prize money + F1 pass & -- & -- & \rs10,000 & Recurring \\ \hline
+ & \textbf{TOTAL} & & & \textbf{\rs10,000} & \\ \hline
+\end{longtable}
+
+\textbf{TOTAL RECURRING: \rs\ 63,800}\\
+\textbf{TOTAL NON-RECURRING: \rs\ 1,48,020}
+
+\textbf{TOTAL SOCIETY BUDGET: \rs\ 2,11,820}
+\endgroup
+
+%================ ANNEXURE V ================
+\annexure{V}{Nexus}
+\begingroup\small
+\subannexure{V-A}{IN-SPACe CANSAT and Model Rocketry Competition}
+
+\textbf{IN-SPACe CANSAT and Model Rocketry Competition 2027:}\\
+This is the Society's flagship competition, aimed at giving students hands-on experience in satellite design and launch systems. In previous editions, the Society has successfully reached the final round, and aims to continue this achievement in the upcoming edition.
+
+We require approval for registration and representation of the institute at this event.
+
+\begin{longtable}{|C{0.2\textwidth}|C{0.11\textwidth}|C{0.08\textwidth}|C{0.11\textwidth}|C{0.13\textwidth}|L{0.23\textwidth}|}
+\hline
+Name & Rate & Quantity & Total & Recurring/Non Recurring & Justification\\ \hline
+Registration Fees & \rs30,000 & 1 & \rs30,000 & Recurring & Charged by the organizers for event administration.\\ \hline
+Fabrication & \rs25,000 & 1 & \rs25,000 & Recurring & Fabrication of the CANSAT and model rocket (sensors, structure and electronics) for participation in national competitions.\\ \hline
+Miscellaneous & \rs15,000 & 1 & \rs15,000 & Recurring & Travel, logistics and allied expenses towards participation in the competition.\\ \hline
+\end{longtable}
+
+\subannexure{V-B}{Society Competitions}
+
+\begin{longtable}{|C{0.2\textwidth}|C{0.11\textwidth}|C{0.08\textwidth}|C{0.11\textwidth}|C{0.13\textwidth}|L{0.23\textwidth}|}
+\hline
+Name & Rate & Quantity & Total & Recurring/Non Recurring & Justification\\ \hline
+Competitions & \rs10,000 & 1 & \rs10,000 & Recurring & Prize money for competitions hosted by the Society (e.g.\ Astronomy Quiz).\\ \hline
+\end{longtable}
+
+\par\noindent\begin{minipage}{\textwidth}
+\subannexure{V-C}{Observation \& Astrophotography Equipment (Non-Recurring)}\par\medskip
+
+\begin{tabular}{|L{0.2\textwidth}|C{0.11\textwidth}|C{0.08\textwidth}|C{0.11\textwidth}|L{0.36\textwidth}|}
+\hline
+Name & Rate & Quantity & Total & Justification\\ \hline
+Celestron Power Tank (17Ah) & \rs45,600 & 1 & \rs45,600 & There is no active power supply at the locations where the telescopes are set up.\\ \hline
+ZWO ASI678MC Planetary Camera & \rs24,000 & 1 & \rs24,000 & There is no proper camera currently available for astrophotography.\\ \hline
+Sky-Watcher 250P Telescope & \rs85,950 & 1 & \rs85,950 & The Society currently has only one working telescope.\\ \hline
+\multicolumn{3}{|r|}{\textbf{TOTAL}} & \textbf{\rs1,55,550} & \\ \hline
+\end{tabular}
+\end{minipage}
+
+\textbf{TOTAL RECURRING: \rs\ 80,000}\\
+\textbf{TOTAL NON-RECURRING: \rs\ 1,55,550}
+
+\textbf{TOTAL SOCIETY BUDGET: \rs\ 2,35,550}
+\endgroup
+
+%================ SIGNATURES ================
+\clearpage
+\thispagestyle{empty}
+\begin{flushright}
+  {\small Submitted for kind consideration}\\[1.2cm]
+  {\large\bfseries \GSname}\\
+  General Secretary\\
+  ACT Council\\
+  IIT Jodhpur
+\end{flushright}
+
+\noindent\signature{\PresName}{President}{Student Gymkhana}\par
+\noindent\signature{\FAname}{Faculty Advisor}{ACT Council}\par
+\noindent\signature{\ADname}{Associate Dean}{Student Affairs}\par
+\noindent\signature{\Deanname}{Dean}{Student Affairs}
+
+\end{document}
