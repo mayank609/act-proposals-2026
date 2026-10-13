@@ -1,0 +1,101 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[letterpaper,top=0.7in,bottom=0.9in,left=1in,right=1in]{geometry}
+\IfFileExists{gelasio.sty}{\usepackage{gelasio}}{\usepackage{charter}} % Georgia-metric clone (body font of both source PDFs)
+\usepackage[scaled=0.92]{helvet}  % Arial-like, for numbered society headings
+\usepackage[T1]{fontenc}
+\usepackage{tfrupee}
+\usepackage{graphicx,array,longtable,enumitem,xcolor,multirow}
+\graphicspath{{../assets/}}
+\usepackage[hidelinks]{hyperref}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\setlist{nosep,leftmargin=2.2em}
+\setlist[itemize]{label=\textbullet}
+
+\newcommand{\rs}{{\rupee}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+% ---- names (verify before submission) ----
+\newcommand{\GSname}{Prashant Srivastav}
+\newcommand{\PresName}{Rudra Gupta}
+\newcommand{\FAname}{Dr. Hardik Jain}
+\newcommand{\ADname}{Dr. Pranay Ranjan}
+\newcommand{\Deanname}{Dr. Rajlaxmi Chouhan}
+
+\newcommand{\society}[1]{\par\bigskip{\sffamily\bfseries\large #1}\par}
+\newcommand{\subhead}[1]{\par{\bfseries #1}\par}
+\newcommand{\annexure}[2]{\clearpage{\Large\bfseries Annexure #1}\qquad{\Large #2}\par\medskip}
+\newcommand{\subannexure}[2]{\par\medskip\hspace*{2em}{\large\bfseries Annexure #1}\qquad{\large #2}\par}
+\newcommand{\signature}[3]{%
+  \begin{minipage}[t]{0.45\textwidth}\raggedright
+  \vspace{1.2cm}{\bfseries #1}\\ #2\\ #3\\ IIT Jodhpur\end{minipage}}
+
+\begin{document}
+\pagestyle{empty}
+
+%================ LETTERHEAD (ACT template) ================
+\begin{minipage}[c]{0.2\textwidth}
+  \includegraphics[width=1.05in]{iitj_logo.png}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.78\textwidth}\raggedleft
+  {\Large\bfseries General Secretary}\\
+  {\Large\bfseries Academic, Career \& Technology Council}\\
+  {\bfseries Indian Institute of Technology Jodhpur}\\
+  NH-65, Nagaur Road, Karwar, 342037, INDIA\\
+  \textit{Phone: \textcolor{blue}{8299322238}}\ \ \textbar\ \textit{E-mail: \textcolor{blue}{\href{mailto:gensecy_act@iitj.ac.in}{gensecy\_act@iitj.ac.in}}}
+\end{minipage}
+\par\vspace{2pt}\noindent\rule{\textwidth}{0.8pt}\par
+
+{\bfseries \GSname}\hfill{\bfseries IITJ/ACT/26-27/GS/009B}\\
+General Secretary, ACT Council\hfill Date: 28/09/2026
+
+{\bfseries To: Dean (Student Affairs), IIT Jodhpur}\\
+{\bfseries Through}:
+\begin{itemize}
+  \item Associate Dean (Student Affairs)
+  \item Faculty Advisor, ACT Council
+  \item President, Student Gymkhana
+\end{itemize}
+
+{\bfseries Subject: Proposal for drinking water campers in the Tinkering Lab for Inter IIT Tech Meet 15.0}
+
+Respected Ma'am,
+
+Students preparing for the Inter IIT Tech Meet 15.0 will be working for long hours in the Tinkering Lab from 10th October 2026 to 10th December 2026. At present, there is no drinking water facility in the lab, and students have to leave their work to fetch water. To make this easier, we propose to place 3 drinking water campers (20 L) in the Tinkering Lab, with daily refills by the vendor, for the full preparation period.
+
+\subhead{Budget}
+\begin{longtable}{C{1cm} L{5.2cm} R{2.4cm} C{1.4cm} C{1.4cm} R{2.2cm}}
+\hline
+\textbf{S.No.} & \textbf{Item} & \textbf{Rate} & \textbf{Qty} & \textbf{Months} & \textbf{Amount} \\
+\hline
+1 & Drinking water camper (20 L) with daily refill, Tinkering Lab & \rs~600 / camper / month & 3 & 2 & \rs~3,600 \\
+\hline
+\multicolumn{5}{r}{\textbf{Total}} & \textbf{\rs~3,600} \\
+\hline
+\end{longtable}
+
+{\bfseries Duration:} 10th October 2026 to 10th December 2026 (2 months)\\
+{\bfseries Location:} Tinkering Lab, IIT Jodhpur
+
+We request you to kindly approve the total amount of {\bfseries \rs~3,600 (Rupees Three Thousand Six Hundred only)} for the above.
+
+%================ SIGNATURES (ACT template) ================
+\clearpage
+\begin{flushright}
+  {\small Submitted for kind consideration}\\[1.2cm]
+  {\large\bfseries \GSname}\\
+  General Secretary\\
+  ACT Council\\
+  IIT Jodhpur
+\end{flushright}
+
+\noindent\signature{\PresName}{President}{Student Gymkhana}\par
+\noindent\signature{\FAname}{Faculty Advisor}{ACT Council}\par
+\noindent\signature{\ADname}{Associate Dean}{Student Affairs}\par
+\noindent\signature{\Deanname}{Dean}{Student Affairs}
+
+\end{document}

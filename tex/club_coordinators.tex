@@ -1,0 +1,118 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[letterpaper,top=0.7in,bottom=0.9in,left=1in,right=1in]{geometry}
+\IfFileExists{gelasio.sty}{\usepackage{gelasio}}{\usepackage{charter}} % Georgia-metric clone (body font of both source PDFs)
+\usepackage[scaled=0.92]{helvet}  % Arial-like, for numbered society headings
+\usepackage[T1]{fontenc}
+\usepackage{tfrupee}
+\usepackage{graphicx,array,longtable,enumitem,xcolor,multirow}
+\graphicspath{{../assets/}}
+\usepackage[hidelinks]{hyperref}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\setlist{nosep,leftmargin=2.2em}
+\setlist[itemize]{label=\textbullet}
+
+\newcommand{\rs}{{\rupee}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+% ---- names (verify before submission) ----
+\newcommand{\GSname}{Prashant Srivastav}
+\newcommand{\PresName}{Rudra Gupta}
+\newcommand{\FAname}{Dr. Hardik Jain}
+\newcommand{\ADname}{Dr. Pranay Ranjan}
+\newcommand{\Deanname}{Dr. Rajlaxmi Chouhan}
+
+\newcommand{\society}[1]{\par\bigskip{\sffamily\bfseries\large #1}\par}
+\newcommand{\subhead}[1]{\par{\bfseries #1}\par}
+\newcommand{\annexure}[2]{\clearpage{\Large\bfseries Annexure #1}\qquad{\Large #2}\par\medskip}
+\newcommand{\subannexure}[2]{\par\medskip\hspace*{2em}{\large\bfseries Annexure #1}\qquad{\large #2}\par}
+\newcommand{\signature}[3]{%
+  \begin{minipage}[t]{0.45\textwidth}\raggedright
+  \vspace{1.2cm}{\bfseries #1}\\ #2\\ #3\\ IIT Jodhpur\end{minipage}}
+
+\begin{document}
+\pagestyle{empty}
+
+%================ LETTERHEAD (ACT template) ================
+\begin{minipage}[c]{0.2\textwidth}
+  \includegraphics[width=1.05in]{iitj_logo.png}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.78\textwidth}\raggedleft
+  {\Large\bfseries General Secretary}\\
+  {\Large\bfseries Academic, Career \& Technology Council}\\
+  {\bfseries Indian Institute of Technology Jodhpur}\\
+  NH-65, Nagaur Road, Karwar, 342037, INDIA\\
+  \textit{Phone: \textcolor{blue}{8299322238}}\ \ \textbar\ \textit{E-mail: \textcolor{blue}{\href{mailto:gensecy_act@iitj.ac.in}{gensecy\_act@iitj.ac.in}}}
+\end{minipage}
+\par\vspace{2pt}\noindent\rule{\textwidth}{0.8pt}\par
+
+{\bfseries \GSname}\hfill{\bfseries IITJ/ACT/26-27/GS/015T}\\
+General Secretary, ACT Council\hfill Date: 28/09/2026
+
+{\bfseries To: Associate Dean (Student Affairs), IIT Jodhpur}\\
+{\bfseries Through}:
+\begin{itemize}
+  \item Faculty Advisor, ACT Council
+\end{itemize}
+
+{\bfseries Subject: Appointment of Club Coordinators under the ACT Council for the session 2026-27}
+
+Respected Sir,
+
+This proposal seeks your approval for the appointment of the following students as Club Coordinators of the respective clubs and societies under the Academic, Career \& Technology (ACT) Council for the session 2026-27.
+
+\begin{longtable}{C{1cm} L{5.4cm} L{3.2cm} L{4.1cm}}
+\hline
+\textbf{S.No.} & \textbf{Name} & \textbf{Roll No.} & \textbf{Club} \\
+\hline
+\endhead
+1 & Khushvendra Singh & B24CM1075 & DevlUp Labs \\
+2 & Kushagra Kinra & B24CS1108 & DevlUp Labs \\
+3 & Aryan Ashok Jain & B24CS1016 & DevlUp Labs \\
+4 & Soham Wad & B24CS1079 & RAID \\
+5 & Abhinav Kumar & B24CM1002 & RAID \\
+6 & Shah Suhani Vishal & B24CH1037 & RAID \\
+7 & Parrva Chirag Shah & B24CS1053 & Quant Club \\
+8 & Arnav Agarwal & B24CM1012 & Quant Club \\
+9 & Kriti Agarwal & B24EE1037 & Quant Club \\
+10 & Nakshatra Sharma & B24MT1022 & Creara \\
+11 & Ankur Kumar & B24CM1010 & Creara \\
+12 & Mrigank Sharma & B24ME1049 & Boltheads \\
+13 & Samyag Kothari & B24ME1067 & Boltheads \\
+14 & Gaurav Sharma & B24ME1028 & Boltheads \\
+15 & Sahilpreet Singh & B24ME1063 & Boltheads \\
+16 & Prerna Chauhan & M25PH1027 & Nexus \\
+17 & Chittanoor Sri Raghava & B24CI1009 & Nexus \\
+18 & Iftikhar Alam & B24CM1032 & Nexus \\
+19 & Bhure Adityaraj Nageshwar & B24PH1007 & Nexus \\
+20 & Gokul Bansal & B24CM1025 & Programming Society \\
+21 & Sadat Ul Rouf Wani & B24CS1103 & Programming Society \\
+22 & Rounak Choudhary & B24CS1067 & Programming Society \\
+23 & Sarwang Mangal & B24CH1036 & Product Club \\
+24 & Vedansh Mahar & B24ME1079 & Product Club \\
+25 & Mehta Taksh Ashish & B24CS1115 & Robotics Society \\
+26 & Amay Shetty & B24MT1005 & Robotics Society \\
+27 & Saigirish S & B24ME1066 & Robotics Society \\
+\hline
+\end{longtable}
+
+We request you to kindly approve the above appointments.
+
+%================ SIGNATURES (ACT template) ================
+\bigskip
+\begin{flushright}
+  {\small Submitted for kind consideration}\\[1.2cm]
+  {\large\bfseries \GSname}\\
+  General Secretary\\
+  ACT Council\\
+  IIT Jodhpur
+\end{flushright}
+
+\noindent\signature{\FAname}{Faculty Advisor}{ACT Council}\par
+\noindent\signature{\ADname}{Associate Dean}{Student Affairs}
+
+\end{document}

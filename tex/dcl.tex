@@ -1,0 +1,85 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[letterpaper,top=0.7in,bottom=0.9in,left=1in,right=1in]{geometry}
+\IfFileExists{gelasio.sty}{\usepackage{gelasio}}{\usepackage{charter}} % Georgia-metric clone (body font of both source PDFs)
+\usepackage[scaled=0.92]{helvet}  % Arial-like, for numbered society headings
+\usepackage[T1]{fontenc}
+\usepackage{tfrupee}
+\usepackage{graphicx,array,longtable,enumitem,xcolor,multirow}
+\graphicspath{{../assets/}}
+\usepackage[hidelinks]{hyperref}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\setlist{nosep,leftmargin=2.2em}
+\setlist[itemize]{label=\textbullet}
+
+\newcommand{\rs}{{\rupee}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+% ---- names (verify before submission) ----
+\newcommand{\GSname}{Prashant Srivastav}
+\newcommand{\PresName}{Rudra Gupta}
+\newcommand{\FAname}{Dr. Hardik Jain}
+\newcommand{\ADname}{Prof. Pranay Ranjan}
+\newcommand{\Deanname}{Dr. Rajlaxmi Chouhan}
+
+\newcommand{\society}[1]{\par\bigskip{\sffamily\bfseries\large #1}\par}
+\newcommand{\subhead}[1]{\par{\bfseries #1}\par}
+\newcommand{\annexure}[2]{\clearpage{\Large\bfseries Annexure #1}\qquad{\Large #2}\par\medskip}
+\newcommand{\subannexure}[2]{\par\medskip\hspace*{2em}{\large\bfseries Annexure #1}\qquad{\large #2}\par}
+\newcommand{\signature}[3]{%
+  \begin{minipage}[t]{0.45\textwidth}\raggedright
+  \vspace{1.2cm}{\bfseries #1}\\ #2\\ #3\\ IIT Jodhpur\end{minipage}}
+
+\begin{document}
+\pagestyle{empty}
+
+%================ LETTERHEAD (ACT template) ================
+\begin{minipage}[c]{0.2\textwidth}
+  \includegraphics[width=1.05in]{iitj_logo.png}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.78\textwidth}\raggedleft
+  {\Large\bfseries General Secretary}\\
+  {\Large\bfseries Academic, Career \& Technology Council}\\
+  {\bfseries Indian Institute of Technology Jodhpur}\\
+  NH-65, Nagaur Road, Karwar, 342037, INDIA\\
+  \textit{Phone: \textcolor{blue}{8299322238}}\ \ \textbar\ \textit{E-mail: \textcolor{blue}{\href{mailto:gensecy_act@iitj.ac.in}{gensecy\_act@iitj.ac.in}}}
+\end{minipage}
+\par\vspace{2pt}\noindent\rule{\textwidth}{0.8pt}\par
+
+{\bfseries \GSname}\hfill{\bfseries IITJ/ACT/26-27/GS/009DCL}\\
+General Secretary, ACT Council\hfill Date: 28/09/2026
+
+{\bfseries To: Faculty Advisors, Inter-IIT Tech Meet 15.0, IIT Jodhpur}
+
+%======= MAIN =======
+
+{\bfseries Subject: Approval of Deputy Contingent Leaders, Inter IIT Tech Meet 15.0}
+
+Respected Sir/Ma'am,
+
+As per precedence, the posts of \textbf{Deputy Contingent Leader (DCL), Inter-IIT Tech Meet} are filled by the technical office bearers of the ACT Council. For Inter-IIT Tech Meet 14.0, the then Vice-President was appointed as a DCL, and interviews were conducted to select the second DCL. This year, there are two Technical Overall Coordinators (OCs) for the two posts of DCL, and hence no separate interviews were required.
+
+Accordingly, the following Technical OCs are proposed for the position of Deputy Contingent Leader:
+
+\begin{itemize}
+    \item Akhil Dhyani (B24CS1005)
+    \item Mayank Bansal (B24CH1022)
+\end{itemize}
+
+The matter is submitted for your kind approval of the above-mentioned students as the \textbf{DCLs, Inter IIT Tech Meet 15.0} for the A.Y. 2026-27.
+
+
+%================ SIGNATURES (ACT template) ================
+\begin{flushright}
+  {\small Submitted for kind consideration}\\[1.2cm]
+  {\large\bfseries \GSname}\\
+  General Secretary\\
+  ACT Council\\
+  IIT Jodhpur
+\end{flushright}
+
+\end{document}

@@ -1,0 +1,5 @@
+# Source data with personal details (emails, CGPA, roll numbers) stays local
+data/
+*.aux
+*.log
+*.out

@@ -1,0 +1,78 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[letterpaper,top=0.7in,bottom=0.9in,left=1in,right=1in]{geometry}
+\IfFileExists{gelasio.sty}{\usepackage{gelasio}}{\usepackage{charter}} % Georgia-metric clone (body font of both source PDFs)
+\usepackage[scaled=0.92]{helvet}  % Arial-like, for numbered society headings
+\usepackage[T1]{fontenc}
+\usepackage{tfrupee}
+\usepackage{graphicx,array,longtable,enumitem,xcolor,multirow}
+\graphicspath{{../assets/}}
+\usepackage[hidelinks]{hyperref}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\setlist{nosep,leftmargin=2.2em}
+\setlist[itemize]{label=\textbullet}
+
+\newcommand{\rs}{{\rupee}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+% ---- names (verify before submission) ----
+\newcommand{\GSname}{Prashant Srivastav}
+\newcommand{\PresName}{Rudra Gupta}
+\newcommand{\FAname}{Dr. Hardik Jain}
+\newcommand{\ADname}{Prof. Pranay Ranjan}
+\newcommand{\Deanname}{Dr. Rajlaxmi Chouhan}
+
+\newcommand{\society}[1]{\par\bigskip{\sffamily\bfseries\large #1}\par}
+\newcommand{\subhead}[1]{\par{\bfseries #1}\par}
+\newcommand{\annexure}[2]{\clearpage{\Large\bfseries Annexure #1}\qquad{\Large #2}\par\medskip}
+\newcommand{\subannexure}[2]{\par\medskip\hspace*{2em}{\large\bfseries Annexure #1}\qquad{\large #2}\par}
+\newcommand{\signature}[3]{%
+  \begin{minipage}[t]{0.45\textwidth}\raggedright
+  \vspace{1.2cm}{\bfseries #1}\\ #2\\ #3\\ IIT Jodhpur\end{minipage}}
+
+\begin{document}
+\pagestyle{empty}
+
+%================ LETTERHEAD (Office of DoSA) ================
+\begin{minipage}[c]{0.2\textwidth}
+  \includegraphics[width=1.05in]{iitj_logo.png}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.78\textwidth}\raggedleft
+  {\Large\bfseries Office of the Dean (Student Affairs)}\\
+  {\bfseries Indian Institute of Technology Jodhpur}\\
+  NH-65, Nagaur Road, Karwar, 342037, INDIA
+\end{minipage}
+\par\vspace{2pt}\noindent\rule{\textwidth}{0.8pt}\par
+
+{\bfseries Ref. No.: IITJ/ACT/26-27/GS/009E}\hfill Date: 07/10/2026
+
+To,\\
+The Board,\\
+Inter-IIT Tech Meet 15.0
+
+{\bfseries Subject: Endorsement of Faculty Advisors of IIT Jodhpur, Inter-IIT Tech Meet 15.0}
+
+Dear Sir/Ma'am,
+
+This is to certify that the following faculty members of the Indian Institute of Technology Jodhpur have been appointed as the \textbf{Faculty Advisors} of the IIT Jodhpur contingent for the \textbf{Inter-IIT Tech Meet 15.0}, vide the Office Memorandum issued by the institute:
+
+\begin{itemize}
+    \item Dr. Bhivraj Suthar
+    \item Dr. Atul Kumar Sharma
+\end{itemize}
+
+The Office of the Dean (Student Affairs), IIT Jodhpur, hereby endorses their appointment. The above-mentioned Faculty Advisors are authorised to represent IIT Jodhpur and to coordinate with the Board on behalf of the institute in all matters pertaining to the Inter-IIT Tech Meet 15.0.
+
+%================ SIGNATURE ================
+\begin{flushright}
+  \vspace*{1.5cm}
+  {\large\bfseries \Deanname}\\
+  Dean (Student Affairs)\\
+  IIT Jodhpur
+\end{flushright}
+
+\end{document}

@@ -1,0 +1,128 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[letterpaper,top=0.5in,bottom=0.6in,left=1in,right=1in]{geometry}
+\IfFileExists{gelasio.sty}{\usepackage{gelasio}}{\usepackage{charter}} % Georgia-metric clone (body font of both source PDFs)
+\usepackage[scaled=0.92]{helvet}  % Arial-like, for numbered society headings
+\usepackage[T1]{fontenc}
+\usepackage{tfrupee}
+\usepackage{graphicx,array,longtable,enumitem,xcolor,multirow}
+\graphicspath{{../assets/}}
+\usepackage[hidelinks]{hyperref}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\setlist{nosep,leftmargin=2.2em}
+\setlist[itemize]{label=\textbullet}
+
+\newcommand{\rs}{{\rupee}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+% ---- names (verify before submission) ----
+\newcommand{\GSname}{Prashant Srivastav}
+\newcommand{\PresName}{Rudra Gupta}
+\newcommand{\FAname}{Dr. Hardik Jain}
+\newcommand{\ADname}{Prof. Pranay Ranjan}
+\newcommand{\Deanname}{Dr. Rajlaxmi Chouhan}
+
+\newcommand{\society}[1]{\par\bigskip{\sffamily\bfseries\large #1}\par}
+\newcommand{\subhead}[1]{\par{\bfseries #1}\par}
+\newcommand{\annexure}[2]{\clearpage{\Large\bfseries Annexure #1}\qquad{\Large #2}\par\medskip}
+\newcommand{\subannexure}[2]{\par\medskip\hspace*{2em}{\large\bfseries Annexure #1}\qquad{\large #2}\par}
+\newcommand{\signature}[3]{%
+  \begin{minipage}[t]{0.45\textwidth}\raggedright
+  \vspace{1.2cm}{\bfseries #1}\\ #2\\ #3\\ IIT Jodhpur\end{minipage}}
+
+\begin{document}
+\pagestyle{empty}
+
+%================ LETTERHEAD (ACT template) ================
+\begin{minipage}[c]{0.2\textwidth}
+  \includegraphics[width=1.05in]{iitj_logo.png}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.78\textwidth}\raggedleft
+  {\Large\bfseries General Secretary}\\
+  {\Large\bfseries Academic, Career \& Technology Council}\\
+  {\bfseries Indian Institute of Technology Jodhpur}\\
+  NH-65, Nagaur Road, Karwar, 342037, INDIA\\
+  \textit{Phone: \textcolor{blue}{8299322238}}\ \ \textbar\ \textit{E-mail: \textcolor{blue}{\href{mailto:gensecy_act@iitj.ac.in}{gensecy\_act@iitj.ac.in}}}
+\end{minipage}
+\par\vspace{2pt}\noindent\rule{\textwidth}{0.8pt}\par
+
+{\bfseries \GSname}\hfill{\bfseries IITJ/ACT/26-27/GS/009DL}\\
+General Secretary, ACT Council\hfill Date: 06/10/2026
+
+{\bfseries To: Faculty Advisors, Inter-IIT Tech Meet 15.0, IIT Jodhpur}
+
+%======= MAIN =======
+
+{\bfseries Subject: Approval of Domain Leaders, Inter IIT Tech Meet 15.0}
+
+Respected Sir,
+
+Application forms for the selection of the \textbf{Domain Leaders (DLs), Inter-IIT Tech Meet 15.0} were released to the student body, and the interviews were conducted on \textbf{2nd and 3rd October, 2026} by the Contingent Leader and the General Secretary, ACT Council.
+
+Based on the candidates' application, interview performance, and overall suitability for the role, the following candidates have been selected as Domain Leaders:
+
+{\centering
+{\small\renewcommand{\arraystretch}{1.0}\begin{tabular}{|C{1.1cm}|L{6.3cm}|L{4.3cm}|C{2.4cm}|}
+  \hline
+  \textbf{S.No.} & \textbf{Domain} & \textbf{Domain Leader} & \textbf{Roll No.} \\
+  \hline
+  1 & Algo Trading & Arnav Agrawal & B24CM1012 \\
+  \hline
+  2 & Astronomy & Kevin & B24PH1013 \\
+  \hline
+  \multirow{2}{*}{3} & \multirow{2}{=}{Artificial Intelligence and Machine Learning} & Abhinav Kumar & B24CM1002 \\
+  \cline{3-4} & & Soham Wad & B24CS1079 \\
+  \hline
+  4 & Blockchain and Web3 & Kushagra Kinra & B24CS1108 \\
+  \hline
+  5 & Chemical Process Design & Anuj Trivedi & B23CH1006 \\
+  \hline
+  6 & Cybersecurity & Varandani Harsh Pramod & B24ES1036 \\
+  \hline
+  \multirow{2}{*}{7} & \multirow{2}{=}{Drone, Aeronautics and Aerial Robotics} & Taksh Mehta & B24CS1115 \\
+  \cline{3-4} & & Sambhav Jha & B23EE1092 \\
+  \hline
+  \multirow{2}{*}{8} & \multirow{2}{=}{Electronics and Robotics} & Saigirish S & B24ME1066 \\
+  \cline{3-4} & & Mrudhul Tula & B23EE1076 \\
+  \hline
+  9 & Game Dev & Nakshatra Sharma & B24MT1022 \\
+  \hline
+  10 & Mobility / EV / Automation & Samyag Kothari & B24ME1067 \\
+  \hline
+  11 & Product Design and Development & Sarwang Mangal & B24CH1036 \\
+  \hline
+  12 & Product Management / Consulting & Sanchit Garg & B23CY1019 \\
+  \hline
+  13 & Quant / Finance & Parrva Chirag Shah & B24CS1053 \\
+  \hline
+  \multirow{2}{*}{14} & \multirow{2}{=}{Software Development} & Khushvendra Singh & B24CM1075 \\
+  \cline{3-4} & & Aryan Ashok Jain & B24CS1016 \\
+  \hline
+  15 & Social / Tech Entrepreneurship and Sustainability & Aditya Sharma & B24CS1119 \\
+  \hline
+  \multirow{2}{*}{16} & \multirow{2}{=}{VLSI Digital Design} & Rudra Khokhani & B23EE1036 \\
+  \cline{3-4} & & Sohom Sarkar & B23EE1099 \\
+  \hline
+\end{tabular}}
+\par}
+
+The selection has been made after due consideration of the candidates' domain expertise, leadership capabilities, communication skills, and ability to contribute effectively to the IIT Jodhpur contingent.
+
+The matter is submitted for your kind approval of the above-mentioned candidates as the \textbf{DLs, Inter IIT Tech Meet 15.0} for the A.Y. 2026-27.
+
+
+%================ SIGNATURES (ACT template) ================
+\enlargethispage{\baselineskip}
+\begin{flushright}
+  {\small Submitted for kind consideration}\\[0.5cm]
+  {\large\bfseries \GSname}\\
+  General Secretary\\
+  ACT Council\\
+  IIT Jodhpur
+\end{flushright}
+
+\end{document}
