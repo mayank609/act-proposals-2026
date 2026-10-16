@@ -1,0 +1,149 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[a4paper,top=0.7in,bottom=1.7in,left=1in,right=1in,footskip=1.1in]{geometry}
+\usepackage{charter}
+\usepackage[scaled=0.92]{helvet}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx,array,enumitem,xcolor}
+\graphicspath{{../assets/}}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\setlist{nosep,leftmargin=2.2em}
+\setlist[itemize]{label=\textbullet}
+
+\newcommand{\GSname}{Prashant Srivastav}
+\newcommand{\Deanname}{Dr. Rajlaxmi Chouhan}
+\newcommand{\FAone}{Dr. Bhivraj Suthar}
+\newcommand{\FAtwo}{Dr. Atul Kumar Sharma}
+
+% Signature footer on every page
+\fancypagestyle{sigfoot}{%
+  \fancyhf{}\renewcommand{\headrulewidth}{0pt}%
+  \fancyfoot[C]{\footnotesize
+    \begin{tabular*}{\textwidth}{@{}p{0.31\textwidth}@{\extracolsep{\fill}}p{0.31\textwidth}p{0.31\textwidth}@{}}
+      \rule{4.2cm}{0.4pt} & \rule{4.2cm}{0.4pt} & \rule{4.2cm}{0.4pt}\\
+      \textbf{\GSname} & \textbf{\FAone} & \textbf{\FAtwo}\\
+      General Secretary, ACT Council & Faculty Advisor, Inter IIT & Faculty Advisor, Inter IIT
+    \end{tabular*}\\[4pt]
+    Page \thepage}}
+
+\newcommand{\rpart}[1]{\par\medskip\underline{#1}\par}
+
+\begin{document}
+\pagestyle{sigfoot}\thispagestyle{sigfoot}
+
+%================ LETTERHEAD ================
+\begin{minipage}[c]{0.2\textwidth}
+  \includegraphics[width=1.05in]{iitj_logo.png}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.78\textwidth}\raggedleft
+  {\Large\bfseries General Secretary}\\
+  {\Large\bfseries Academic, Career \& Technology Council}\\
+  {\bfseries Indian Institute of Technology Jodhpur}\\
+  NH-65, Nagaur Road, Karwar, 342037, INDIA\\
+  \textit{Phone: 8299322238}\ \ \textbar\ \textit{E-mail: \textcolor{blue}{\href{mailto:gensecy_act@iitj.ac.in}{gensecy\_act@iitj.ac.in}}}
+\end{minipage}
+\par\vspace{2pt}\noindent\rule{\textwidth}{0.8pt}\par
+
+{\bfseries \GSname}\hfill{\bfseries IITJ/ACT/26-27/GS/009R}\\
+General Secretary, ACT Council\hfill Date: 14/10/2026
+
+\vspace{6pt}
+{\bfseries To: Dean (Student Affairs), IIT Jodhpur}\\[2pt]
+{\bfseries Through}:
+\begin{itemize}
+  \item Associate Dean (Student Affairs)
+  \item Faculty Advisors, Inter-IIT Tech Meet 15.0
+\end{itemize}
+
+\vspace{4pt}
+{\bfseries Subject: Approval of offline roll number pattern for Inter-IIT Tech Meet 15.0}
+
+\vspace{4pt}
+Respected Ma'am,
+
+The Inter-IIT Tech Meet 15.0 is scheduled to take place from 11th to 14th December 2026 at IIT Guwahati. In order to facilitate the participation of students, the organisers have requested a document confirming the offline roll number pattern, in the format detailed in \textbf{Annexure I}.
+
+I request your approval for this format in order to continue with the Inter-IIT Tech Meet 15.0 registration process.
+
+\vspace{8pt}
+Submitted for kind consideration.
+
+\vspace{1.8cm}
+{\bfseries \GSname}\\
+General Secretary\\
+ACT Council\\
+IIT Jodhpur
+
+\newpage
+\begin{center}
+{\large\bfseries Annexure I}\\[4pt]
+{\bfseries Offline Roll Number Pattern at IIT Jodhpur}
+\end{center}
+\setlength{\parskip}{3pt}\renewcommand{\rpart}[1]{\par\smallskip\underline{#1}\par}
+
+At IIT Jodhpur, each student is assigned a unique roll number that provides key information about their academic programme and department. The roll number consists of four parts, as described below:
+
+\begin{center}
+\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{cccc}
+  {\LARGE\underline{B}} & {\LARGE\underline{24}} & {\LARGE\underline{ME}} & {\LARGE\underline{1072}} \\[2pt]
+  \small 1 & \small 2 & \small 3 & \small 4
+\end{tabular}
+\end{center}
+
+\rpart{1. Programme Type:}
+The first character of the roll number signifies the type of academic programme the student is enrolled in:
+\begin{multicols}{3}
+\begin{itemize}
+  \item \textbf{B:} Bachelor's Programme
+  \item \textbf{M:} Master's Programme
+  \item \textbf{P:} Ph.D. Programme
+\end{itemize}
+\end{multicols}
+For example, a roll number beginning with ``B'' indicates that the student is pursuing a Bachelor's degree, while ``M'' denotes a Master's student and ``P'' denotes a Ph.D. student.
+
+\rpart{2. Year of Enrolment:}
+The second part of the roll number is a two-digit code that represents the year in which the student commenced their degree. These are the last two digits of the corresponding year.
+
+For example, a roll number with its second part as ``24'' indicates that the student enrolled in the year 2024.
+
+\rpart{3. Department Code:}
+The third part of the roll number identifies the department the student belongs to. Below is a list of department codes and their corresponding disciplines:
+\begin{multicols}{2}\raggedright
+\begin{itemize}
+  \item \textbf{CS:} Computer Science and Engineering
+  \item \textbf{AI:} AI and Data Science (CSE Department)
+  \item \textbf{EE:} Electrical Engineering
+  \item \textbf{EC:} Electronics Engineering
+  \item \textbf{ME:} Mechanical Engineering
+  \item \textbf{CH:} Chemical Engineering
+  \item \textbf{CI:} Civil Engineering
+  \item \textbf{MT:} Materials and Metallurgy
+  \item \textbf{BB:} Bioengineering and Biotechnology
+  \item \textbf{MA:} Mathematics
+  \item \textbf{PH:} Physics
+  \item \textbf{CY:} Chemistry
+\end{itemize}
+\end{multicols}
+
+\rpart{4. Unique Identifier:}
+The final part of the roll number is a \textbf{system-generated numeric code} assigned to each student.
+\begin{itemize}
+  \item For students enrolled before 2023, this identifier is a \textbf{3-digit number} starting with \textbf{001}.
+  \item For students enrolled in 2023 and onwards, this identifier is a \textbf{4-digit number} starting with \textbf{1001}.
+\end{itemize}
+
+For example:
+\begin{itemize}
+  \item A student enrolled in 2022 with roll number ``B22ME072'' has a 3-digit unique identifier (072).
+  \item A student enrolled in 2024 with roll number ``B24ME1072'' has a 4-digit unique identifier (1072).
+\end{itemize}
+
+IIT Jodhpur also accommodates students pursuing their degree in the online mode. However, as a part of the Inter-IIT Tech Meet 15.0, only students pursuing their degrees in the offline mode will be part of the final contingent that will visit IIT Guwahati.
+
+
+\end{document}
