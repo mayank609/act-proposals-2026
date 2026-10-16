@@ -1,0 +1,280 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[letterpaper,top=0.7in,bottom=1.45in,left=1in,right=1in,footskip=0.85in]{geometry}
+\IfFileExists{gelasio.sty}{\usepackage{gelasio}}{\usepackage{charter}} % Georgia-metric clone (body font of both source PDFs)
+\usepackage[scaled=0.92]{helvet}  % Arial-like, for numbered society headings
+\usepackage[T1]{fontenc}
+\usepackage{tfrupee}
+\usepackage{graphicx,array,longtable,enumitem,xcolor,multirow}
+\graphicspath{{../assets/}}
+\usepackage{fancyhdr,pdfpages,needspace}
+\usepackage[hidelinks]{hyperref}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\setlist{nosep,leftmargin=2.2em}
+\setlist[itemize]{label=\textbullet}
+
+\newcommand{\rs}{{\rupee}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+% ---- names (verify before submission) ----
+\newcommand{\GSname}{Prashant Srivastav}
+\newcommand{\FAIIname}{Dr. Bhivraj Suthar}
+\newcommand{\FAIIbname}{Dr. Atul Kumar}
+\newcommand{\ADname}{Dr. Pranay Ranjan}
+\newcommand{\Deanname}{Dr. Rajlaxmi Chouhan}
+
+% ---- files to attach: upload on Overleaf alongside this .tex, or place in assets/ ----
+\newcommand{\rulebookfile}{rulebook_tm15.pdf}          % Inter IIT Tech Meet 15.0 rulebook
+\newcommand{\gymkhanafile}{gymkhana_appendix_1b.pdf}   % Appendix 1-B, Students' Gymkhana constitution
+% \attachpdf{file}{includepdf options}{placeholder text}: looks next to the .tex, then in ../assets/
+\newcommand{\attachpdf}[3]{%
+  \IfFileExists{#1}{\includepdf[#2]{#1}}{%
+  \IfFileExists{../assets/#1}{\includepdf[#2]{../assets/#1}}{%
+  \clearpage\textbf{[#3]}}}}
+
+\newcommand{\subhead}[1]{\par\needspace{6\baselineskip}{\bfseries #1}\par\nopagebreak}
+\newcommand{\annexure}[2]{\clearpage{\Large\bfseries Annexure #1}\qquad{\Large #2}\par\medskip}
+\newcommand{\subannex}[2]{\par\medskip{\large\bfseries Annexure #1}\quad{\large #2}\par\smallskip}
+\newcommand{\signature}[3]{%
+  \begin{minipage}[t]{0.45\textwidth}\raggedright
+  \vspace{1.2cm}{\bfseries #1}\\ #2\\ #3\\ IIT Jodhpur\end{minipage}}
+
+% ---- footer: signatures of FA 1, FA 2 and GS ACT on every page ----
+\newcommand{\footsig}[2]{\begin{minipage}[t]{0.31\textwidth}\centering\footnotesize
+  \rule{0.85\linewidth}{0.4pt}\\[1pt]{\bfseries #1}\\ #2\end{minipage}}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\footsig{\FAIIname}{Faculty Advisor, Inter IIT}\hfill
+  \footsig{\FAIIbname}{Faculty Advisor, Inter IIT}\hfill
+  \footsig{\GSname}{General Secretary, ACT Council}}
+\fancypagestyle{plain}{}
+
+\begin{document}
+
+%================ LETTERHEAD (ACT template) ================
+\begin{minipage}[c]{0.2\textwidth}
+  \includegraphics[width=1.05in]{iitj_logo.png}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.78\textwidth}\raggedleft
+  {\Large\bfseries General Secretary}\\
+  {\Large\bfseries Academic, Career \& Technology Council}\\
+  {\bfseries Indian Institute of Technology Jodhpur}\\
+  NH-65, Nagaur Road, Karwar, 342037, INDIA\\
+  \textit{Phone: \textcolor{blue}{8299322238}}\ \ \textbar\ \textit{E-mail: \textcolor{blue}{\href{mailto:gensecy_act@iitj.ac.in}{gensecy\_act@iitj.ac.in}}}
+\end{minipage}
+\par\vspace{2pt}\noindent\rule{\textwidth}{0.8pt}\par
+
+{\bfseries \GSname}\hfill{\bfseries IITJ/ACT/26-27/GS/009}\\
+General Secretary, ACT Council\hfill Date: 08/10/2026
+
+{\bfseries To: Director, IIT Jodhpur}\\
+{\bfseries Through}:
+\begin{itemize}
+  \item Dean (Student Affairs)
+  \item Associate Dean (Student Affairs)
+  \item Faculty Advisors, Inter IIT Tech Meet
+\end{itemize}
+
+{\bfseries Subject: Approval for budget of Inter IIT Tech Meet 15.0}
+
+Respected Sir,
+
+With respect to the mentioned subject, I would like to propose the budget for the participation of IIT Jodhpur in the Inter IIT Tech Meet 15.0, to be hosted by IIT Guwahati from 11th to 14th December 2026. As the Problem Statements are yet to be released, this budget has been prepared on the basis of the maximum contingent size and the charges specified in the official rulebook (Annexure 2-A). Please find it appended below:
+
+{\small
+\begin{longtable}{|L{2.5cm}|C{0.8cm}|R{1.3cm}|C{0.9cm}|R{1.9cm}|L{6.0cm}|}
+\hline
+\textbf{Item} & \textbf{Qty} & \textbf{Per unit (\rs)} & \textbf{GST} & \textbf{Total (incl.\ GST)} & \textbf{Justification} \\ \hline
+\endhead
+Travel & 91 & 4,000 & -- & \rs~3,64,000 & One-way 3rd AC train travel for the full contingent from Jodhpur to Guwahati via Jaipur, to reach within the travel window of 8th--10th December (Rulebook 3.2; route in Annexure 1-C). Return journey to be arranged by the students. \\ \hline
+Accommodation \& food & 91 & 3,000 & 5\% & \rs~2,86,650 & Fee charged by IIT Guwahati for food and accommodation of each offline attendee from 10th to 15th December (Rulebook 3.2, 3.6.1). Payable along with the Bonafide list by 7th December. \\ \hline
+Registration fee & 91 & 800 & 18\% & \rs~85,904 & Mandatory registration fee for every participant, including the admin team (Rulebook 3.6). Paid at one go for each prep category; the admin registration is paid along with the High Prep fees. \\ \hline
+Resources (provisional) & -- & -- & -- & \rs~13,446 & Initial PS-specific requirements, such as API credits, cloud compute or small components, for the High, Mid and Low Prep PS. Any further requirement will be proposed separately with an itemised list and quotations once the PS are released, and procured as per institute norms. \\ \hline
+Miscellaneous & -- & -- & -- & \rs~50,000 & Food, local transport (railway station to IIT Guwahati) and other unforeseen expenses of the contingent before and during the event, managed by the admin team under the supervision of the Faculty Advisors. \\ \hline
+\multicolumn{4}{|l|}{\textbf{Total}} & \textbf{\rs~8,00,000} & \\ \hline
+\end{longtable}}
+
+\begin{itemize}
+  \item Every Problem Statement will be participated in to the full extent by students of IIT Jodhpur, subject to faculty approval.
+  \item The full contingent of 91 participants will travel to IIT Guwahati for the final event.
+  \item The travel fare is an estimate for 3rd AC (Jodhpur -- Jaipur -- Kamakhya).
+\end{itemize}
+
+\subhead{Request for advance instead of reimbursement}
+Due to the time-sensitive nature of the payments, it is requested that, instead of post-payment and reimbursement, almost the entire budget, i.e.\ \textbf{\rs~7,86,554 out of \rs~8,00,000 (about 98\%)}, be issued as an advance to the accounts of the Faculty Advisors, Inter IIT Tech Meet, as follows:
+
+\begin{center}
+\begin{tabular}{|L{3.4cm}|L{6.4cm}|R{2.6cm}|}
+\hline
+\textbf{Faculty Advisor} & \textbf{Budget heads covered} & \textbf{Advance} \\ \hline
+\FAIIname & Registration fees (\rs~85,904) and accommodation \& food (\rs~2,86,650), payable to IIT Guwahati & \rs~3,72,554 \\ \hline
+\FAIIbname & Travel tickets (\rs~3,64,000) and miscellaneous expenses (\rs~50,000) & \rs~4,14,000 \\ \hline
+\multicolumn{2}{|l|}{\textbf{Total advance}} & \textbf{\rs~7,86,554} \\ \hline
+\multicolumn{2}{|l|}{Resources (procured as per institute procedure)} & \rs~13,446 \\ \hline
+\multicolumn{2}{|l|}{\textbf{Total budget}} & \textbf{\rs~8,00,000} \\ \hline
+\end{tabular}
+\end{center}
+
+\textbf{Time sensitivity of the payments:}
+\begin{itemize}
+  \item \textbf{Registration:} registrations close 10 days after the release of each High Prep PS (tentatively 10th--20th October) and 7 days after the release of Mid, Low and No Prep PS. The fees of each prep category must be paid at one go by the stipulated date, with proof of payment, for the teams to be registered (Rulebook 3.5, 3.7).
+  \item \textbf{Travel:} train reservations open 60 days before the journey, and 91 confirmed 3rd AC berths on a weekly train can only be secured if the tickets are booked as soon as the booking opens.
+  \item \textbf{Accommodation:} the fees must be paid along with the Bonafide list by 7th December 2026.
+  \item \textbf{Students:} an advance avoids the students having to make these payments from their own pockets, as was necessary in the previous edition due to delays in approval.
+\end{itemize}
+
+\textbf{Settlement:} the advance will be settled by submitting the receipts/invoices from IIT Guwahati and copies of the travel tickets to the concerned office, and any unspent amount will be returned. Invoices for every payment will be maintained and shared with the Faculty Advisors and all relevant offices.
+
+We request the approval of the budget and the release of the advance at the earliest, so that the registrations, payments and travel bookings can be completed within the deadlines and IIT Jodhpur can deliver its best performance in the Inter IIT Tech Meet 15.0.
+
+%================ INDEX ================
+\clearpage
+{\large\bfseries\underline{Index of supporting documents}}\par
+\setlength{\parskip}{2pt}
+{\bfseries Annexure 1 :} Supporting details\par
+\begin{itemize}
+  \item {\bfseries Annexure 1-A :} Contingent size and points (Rulebook 3.3, 3.4)
+  \item {\bfseries Annexure 1-B :} Registration, Problem Statements and team selection (Rulebook 3.1, 3.5)
+  \item {\bfseries Annexure 1-C :} Travel and accommodation (Rulebook 3.2)
+  \item {\bfseries Annexure 1-D :} Registration fees and payment (Rulebook 3.6, 3.7)
+\end{itemize}
+{\bfseries Annexure 2 :} Reference documents\par
+\begin{itemize}
+  \item {\bfseries Annexure 2-A :} Inter IIT Tech Meet 15.0 Rulebook, sections 3.1 -- 3.7
+  \item {\bfseries Annexure 2-B :} Appendix 1-B, Constitution of the Students' Gymkhana, IIT Jodhpur
+\end{itemize}
+\setlength{\parskip}{6pt}
+
+%================ ANNEXURE 1 ================
+\annexure{1}{Supporting details}
+
+\subannex{1-A :}{Contingent size and points (Rulebook 3.3, 3.4)}
+
+\begin{center}
+\begin{tabular}{|L{5.6cm}|C{3.4cm}|C{1.6cm}|C{2.6cm}|}
+\hline
+\textbf{Category} & \textbf{Maximum members} & \textbf{Total} & \textbf{Maximum points} \\ \hline
+Admin* & 3 + 1 & 4 & -- \\ \hline
+High Prep & 8 $\times$ 4 & 32 & 600 \\ \hline
+Mid Prep & 6 $\times$ 5 & 30 & 400 \\ \hline
+Low Prep & 4 $\times$ 3 & 12 & 250 \\ \hline
+No Prep & 2 $\times$ 3 & 6 & 150 \\ \hline
+Students' Academic Conference (SAC) & 1 $\times$ 3 & 3 & 3 $\times$ (30 + 10) \\ \hline
+Engineers' Conclave (EC) & 2 $\times$ 2 & 4 & 2 $\times$ (30 + 20 + 5 + 5) \\ \hline
+\multicolumn{2}{|l|}{\textbf{Total}} & \textbf{91} & \\ \hline
+\end{tabular}
+\end{center}
+{\small *Technical Secretary, Contingent Leader and two Deputy Contingent Leaders.}
+
+IIT Jodhpur will participate with the full contingent of 91 members in all categories, as the points in each category can only be secured by participating in every Problem Statement to the full extent. All members will travel to IIT Guwahati for the final event.
+
+\subannex{1-B :}{Registration, Problem Statements and team selection (Rulebook 3.1, 3.5)}
+
+\subhead{Admin registration}
+The admin registration (Technical Secretary, Contingent Leader and two Deputy Contingent Leaders) required only the submission of the registration form by 7th October 2026 (Rulebook 3.5 (3)). Its fee will be paid together with the High Prep fees from the advance (Rulebook 3.5 (6)).
+
+\subhead{Problem Statements (as shared by IIT Guwahati)}
+\begin{center}
+\begin{tabular}{|L{2.1cm}|C{1.3cm}|C{1.6cm}|L{5.6cm}|L{3cm}|}
+\hline
+\textbf{Category} & \textbf{Total PS} & \textbf{Team size per PS} & \textbf{Probable domains} & \textbf{Tentative release of PS} \\ \hline
+High Prep & 4 & 8 & Electronics, Aeromodelling, Robotics, AI/ML, Quant & 10th -- 20th October 2026 \\ \hline
+Mid Prep & 5 & 6 & Web3, Product Development, Chemical Process Design, Robotics, Artificial Intelligence, FinTech & 27th October -- 7th November 2026 \\ \hline
+Low Prep & 3 & 4 & To be announced by the host & 25th -- 30th November 2026 \\ \hline
+\end{tabular}
+\end{center}
+
+\needspace{14\baselineskip}
+\subhead{Important dates (tentative)}
+\begin{center}
+\begin{tabular}{|L{8.6cm}|L{5cm}|}
+\hline
+\textbf{Event} & \textbf{Tentative date} \\ \hline
+Admin registration (form) & 7th October 2026 \\ \hline
+Release of High Prep PS & 10th -- 20th October 2026 \\ \hline
+Submission of attested roll number pattern & 15th October 2026 \\ \hline
+Release of Mid Prep PS & 27th October -- 7th November 2026 \\ \hline
+Call for Papers (SAC) and Call for Projects (EC) & 31st October 2026 \\ \hline
+Mid-term submission, High Prep & 9th -- 12th November 2026 \\ \hline
+Release of Low Prep PS & 25th -- 30th November 2026 \\ \hline
+Final submission, High Prep & 4th -- 7th December 2026 \\ \hline
+Bonafide list and accommodation fees & 7th December 2026 \\ \hline
+Travel window & 8th -- 10th December 2026 \\ \hline
+Inter IIT Tech Meet 15.0 & 11th -- 14th December 2026 \\ \hline
+\end{tabular}
+\end{center}
+{\small All dates are tentative and subject to change as communicated by IIT Guwahati.}
+
+\subhead{Team selection}
+\begin{itemize}
+  \item Each Problem Statement will be floated among the students as soon as it is released, and teams will be formed from the responses received.
+  \item The teams will be evaluated by the Faculty Advisors, Inter IIT Tech Meet and the Associate Dean (Student Affairs), and the final team will be recommended.
+  \item The selection follows Appendix 1-B of the Students' Gymkhana Constitution (Annexure 2-B): the Contingent Leader is selected by the GS and Faculty Advisors with DoSA approval; the Deputy Contingent Leaders and Domain Leads by the GS and Contingent Leader with Faculty Advisor approval; and the contingent members by the CL, DCLs and Domain Leads with ADSA approval.
+  \item The teams will be registered within 10 days of release for High Prep and 7 days for Mid, Low and No Prep PS (Rulebook 3.5 (4)), and the registration fees will be paid from the advance at the time of registration.
+\end{itemize}
+
+\subannex{1-C :}{Travel and accommodation (Rulebook 3.2)}
+
+The travel window is 8th--10th December 2026, and accommodation at IIT Guwahati is provided from 08:00 hrs on 10th December. Contingents arriving between midnight and 08:00 hrs on 10th December incur no additional charges, subject to informing the Organising Committee in advance. The proposed route is:
+
+\begin{center}
+\begin{tabular}{|L{3.4cm}|L{4.4cm}|L{2.8cm}|L{2.8cm}|}
+\hline
+\textbf{Leg} & \textbf{Train} & \textbf{Departure} & \textbf{Arrival} \\ \hline
+Jodhpur -- Jaipur & 22978 JU JP Express & Mon 7 Dec, 16:00 & Mon 7 Dec, 21:15 \\ \hline
+Jaipur -- Kamakhya & 19615 Kavi Guru Express & Mon 7 Dec, 23:10 & Thu 10 Dec, 00:10 \\ \hline
+\end{tabular}
+\end{center}
+
+\subhead{Justification for the non-direct route}
+\begin{itemize}
+  \item The direct 15631 Barmer--Guwahati Express reaches Guwahati on 8th December night, 1.5 days before the accommodation begins, requiring an extended stay at \rs~600 (+ 5\% GST) per person per day (about \rs~1.15 lakh for the contingent).
+  \item The direct 15623 Bhagat Ki Kothi--Kamakhya Express reaches Kamakhya at 22:00 on 10th December, after the Opening Ceremony.
+  \item The route via Jaipur reaches within the no-charge arrival window on 10th December, with a sufficient buffer before the Opening Ceremony and at a lower fare.
+\end{itemize}
+
+A faculty advisor is requested to accompany the contingent to IIT Guwahati. The students will arrange their return journey after the event.
+
+\subannex{1-D :}{Registration fees and payment (Rulebook 3.6, 3.7)}
+
+\begin{itemize}
+  \item Registration fee: \rs~800 (+ 18\% GST) for every participant, including the admin team and members of SAC and EC (Rulebook 3.6).
+  \item Food and accommodation: \rs~3,000 (+ 5\% GST) per offline attendee (Rulebook 3.6.1).
+  \item Payments are to be made through the institute portal or fund transfer, at one go for each prep category, and the proof of payment is to be submitted to the Organising Committee (Rulebook 3.7). These payments will be made from the advance requested to the Faculty Advisors' accounts.
+\end{itemize}
+
+%================ ANNEXURE 2 ================
+\annexure{2}{Reference documents}
+
+\subannex{2-A :}{Inter IIT Tech Meet 15.0 Rulebook, sections 3.1 -- 3.7}
+The relevant pages of the official rulebook are attached on the following pages:
+\begin{itemize}
+  \item Page 5: Sections 3.1 Dates, 3.2 Accommodation and 3.3 Points (Annexure 1-A, 1-B, 1-C)
+  \item Page 6: Sections 3.4 Contingent Details and 3.5 Registration (Annexure 1-A, 1-B)
+  \item Page 7: Section 3.5 Registration (contd.) and 3.6 Registration Details (Annexure 1-B, 1-D)
+  \item Page 8: Sections 3.6.1 Registration of Offline Attendees and 3.7 Payment Gateway (Annexure 1-D)
+\end{itemize}
+
+\subannex{2-B :}{Appendix 1-B, Constitution of the Students' Gymkhana, IIT Jodhpur}
+Page 36 of the Constitution (April 2026), specifying the selection and approval authorities for the Inter-IIT Tech Meet contingent (Annexure 1-B), is attached after the rulebook pages.
+
+\attachpdf{\rulebookfile}{pages=5-8,scale=0.82,pagecommand={\thispagestyle{fancy}}}
+  {Upload rulebook\_tm15.pdf to attach rulebook pages 5--8 here.}
+
+\attachpdf{\gymkhanafile}{pages=-,scale=0.82,pagecommand={\thispagestyle{fancy}}}
+  {Upload gymkhana\_appendix\_1b.pdf (Appendix 1-B of the Students' Gymkhana constitution) to attach it here.}
+
+%================ SIGNATURES (ACT template) ================
+\clearpage
+\noindent\signature{\GSname}{General Secretary}{ACT Council}\par
+\noindent\signature{\FAIIname}{Faculty Advisor}{Inter IIT Tech Meet}\hfill
+\signature{\FAIIbname}{Faculty Advisor}{Inter IIT Tech Meet}\par
+\noindent\signature{\ADname}{Associate Dean}{Student Affairs}\par
+\noindent\signature{\Deanname}{Dean}{Student Affairs}
+
+\end{document}
