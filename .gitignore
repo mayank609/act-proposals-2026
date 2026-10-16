@@ -1,5 +1,8 @@
 # Source data with personal details (emails, CGPA, roll numbers) stays local
 data/
+temp_auto_push.bat
 *.aux
 *.log
 *.out
+.gitignore
+branch_structure.json
