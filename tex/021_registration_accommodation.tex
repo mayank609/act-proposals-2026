@@ -1,0 +1,182 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[letterpaper,top=0.7in,bottom=1.45in,left=1in,right=1in,footskip=0.85in]{geometry}
+\IfFileExists{gelasio.sty}{\usepackage{gelasio}}{\usepackage{charter}} % Georgia-metric clone (body font of both source PDFs)
+\usepackage[scaled=0.92]{helvet}
+\usepackage[T1]{fontenc}
+\usepackage{tfrupee}
+\usepackage{graphicx,array,longtable,enumitem,xcolor,multirow}
+\graphicspath{{../assets/}}
+\usepackage{fancyhdr,pdfpages,needspace}
+\usepackage[hidelinks]{hyperref}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\setlist{nosep,leftmargin=2.2em}
+\setlist[itemize]{label=\textbullet}
+
+\newcommand{\rs}{{\rupee}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+% ---- names (verify before submission) ----
+\newcommand{\GSname}{Prashant Srivastav}
+\newcommand{\FAIIname}{Dr. Bhivraj Suthar}
+\newcommand{\FAIIbname}{Dr. Atul Kumar}
+\newcommand{\ADname}{Dr. Pranay Ranjan}
+\newcommand{\Deanname}{Dr. Rajlaxmi Chouhan}
+
+% ---- files to attach: upload on Overleaf alongside this .tex, or place in assets/ ----
+\newcommand{\rulebookfile}{rulebook_tm15.pdf}
+\newcommand{\omfile}{budget_allocation_om_2026_27.pdf}   % DoSA OM, budget allocation 2026-27
+% \attachpdf{file}{includepdf options}{placeholder text}: looks next to the .tex, then in ../assets/
+\newcommand{\attachpdf}[3]{%
+  \IfFileExists{#1}{\includepdf[#2]{#1}}{%
+  \IfFileExists{../assets/#1}{\includepdf[#2]{../assets/#1}}{%
+  \clearpage\textbf{[#3]}}}}
+
+\newcommand{\subhead}[1]{\par\needspace{3\baselineskip}{\bfseries #1}\par\nopagebreak}
+\newcommand{\annexure}[2]{\clearpage{\Large\bfseries Annexure #1}\qquad{\Large #2}\par\medskip}
+\newcommand{\signature}[3]{%
+  \begin{minipage}[t]{0.45\textwidth}\raggedright
+  \vspace{1.2cm}{\bfseries #1}\\ #2\\ #3\\ IIT Jodhpur\end{minipage}}
+
+% ---- footer: signatures of FA 1, FA 2 and GS ACT on every page ----
+\newcommand{\footsig}[2]{\begin{minipage}[t]{0.31\textwidth}\centering\footnotesize
+  \rule{0.85\linewidth}{0.4pt}\\[1pt]{\bfseries #1}\\ #2\end{minipage}}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\footsig{\FAIIname}{Faculty Advisor, Inter IIT}\hfill
+  \footsig{\FAIIbname}{Faculty Advisor, Inter IIT}\hfill
+  \footsig{\GSname}{General Secretary, ACT Council}}
+
+\begin{document}
+
+%================ LETTERHEAD (ACT template) ================
+\begin{minipage}[c]{0.2\textwidth}
+  \includegraphics[width=1.05in]{iitj_logo.png}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.78\textwidth}\raggedleft
+  {\Large\bfseries General Secretary}\\
+  {\Large\bfseries Academic, Career \& Technology Council}\\
+  {\bfseries Indian Institute of Technology Jodhpur}\\
+  NH-65, Nagaur Road, Karwar, 342037, INDIA\\
+  \textit{Phone: \textcolor{blue}{8299322238}}\ \ \textbar\ \textit{E-mail: \textcolor{blue}{\href{mailto:gensecy_act@iitj.ac.in}{gensecy\_act@iitj.ac.in}}}
+\end{minipage}
+\par\vspace{2pt}\noindent\rule{\textwidth}{0.8pt}\par
+
+{\bfseries \GSname}\hfill{\bfseries IITJ/ACT/26-27/GS/021}\\
+General Secretary, ACT Council\hfill Date: 14/10/2026
+
+{\bfseries To: Dean (Student Affairs), IIT Jodhpur}\\
+{\bfseries Through}:
+\begin{itemize}
+  \item Associate Dean (Student Affairs)
+  \item Faculty Advisors, Inter IIT Tech Meet
+\end{itemize}
+
+{\bfseries Subject: Approval for registration and accommodation fees, Inter IIT Tech Meet 15.0}
+
+Respected Ma'am,
+
+With respect to the mentioned subject, I would like to request approval for the registration fees (Admin, High Prep and Mid Prep) and the accommodation fees (High Prep teams) for the Inter IIT Tech Meet 15.0, hosted by IIT Guwahati from 11th to 14th December 2026, as part of the budget proposal IITJ/ACT/26-27/GS/009.
+
+As per the rulebook, the registration fee is \rs~800 (+ 18\% GST), i.e.\ \rs~944 per participant (section 3.6), and the food and accommodation fee is \rs~3,000 (+ 5\% GST), i.e.\ \rs~3,150 per offline attendee (section 3.6.1). The details are given below:
+
+\begin{center}
+\begin{tabular}{|L{2.9cm}|L{3.4cm}|C{2.1cm}|R{2.3cm}|R{2.6cm}|}
+\hline
+\textbf{Fee head} & \textbf{Category} & \textbf{Participants} & \textbf{Fee per participant} & \textbf{Amount (incl. GST)} \\ \hline
+\multirow{3}{*}{Registration} & Admin* & 4 & \rs~944 & \rs~3,776 \\ \cline{2-5}
+ & High Prep (4 $\times$ 8) & 32 & \rs~944 & \rs~30,208 \\ \cline{2-5}
+ & Mid Prep (5 $\times$ 6) & 30 & \rs~944 & \rs~28,320 \\ \hline
+\multicolumn{2}{|l|}{\textbf{Subtotal (registration)}} & \textbf{66} & & \textbf{\rs~62,304} \\ \hline
+Accommodation & High Prep (4 $\times$ 8) & 32 & \rs~3,150 & \rs~1,00,800 \\ \hline
+\multicolumn{4}{|l|}{\textbf{Total}} & \textbf{\rs~1,63,104} \\ \hline
+\end{tabular}
+\end{center}
+{\small *Technical Secretary, Contingent Leader and two DCLs; paid with the High Prep fees (Rulebook 3.5 (6)).}
+
+\subhead{Budget utilisation}
+As per the Office Memorandum IITJ/OS/OM/Budget Allocation/2026-27/01 dated 29th April 2026 (Annexure III), \rs~8 lakh has been allocated under head J.1 (Inter IIT Tech Meet) for the financial year 2026-27. The utilisation through this proposal is:
+
+\begin{center}
+\begin{tabular}{|L{8.4cm}|R{2.8cm}|C{1.8cm}|}
+\hline
+\textbf{Particulars} & \textbf{Amount} & \textbf{Share} \\ \hline
+Allocation under head J.1, Inter IIT Tech Meet (2026-27) & \rs~8,00,000 & 100\% \\ \hline
+Requested in this proposal & \rs~1,63,104 & 20.39\% \\ \hline
+\textbf{Balance after this proposal} & \textbf{\rs~6,36,896} & \textbf{79.61\%} \\ \hline
+\end{tabular}
+\end{center}
+
+\subhead{Time sensitivity}
+\begin{itemize}
+  \item Registrations close 10 days after the release of each High Prep PS (10th--20th October) and 7 days after the release of each Mid Prep PS (tentatively 27th October--7th November).
+  \item Registration is confirmed only after the proof of payment is verified, and the accommodation fees are due with the Bonafide list by 7th December 2026 (Rulebook 3.7).
+\end{itemize}
+
+We therefore kindly request you to grant approval for \textbf{\rs~1,63,104} towards the registration and accommodation fees at the earliest, so that the teams of IIT Jodhpur can be registered and the payments completed within the deadlines.
+
+{\bfseries Enclosures:} Annexure I (contingent composition), Annexure II (rulebook extracts), Annexure III (budget allocation OM).
+
+%================ ANNEXURE I ================
+\annexure{I}{Contingent composition}
+
+As per section 3.4 of the rulebook, the Admin team consists of 3 + 1 members, and the maximum team sizes are 8 members for each High Prep Problem Statement and 6 members for each Mid Prep Problem Statement. IIT Jodhpur will participate with the full Admin team and full teams in all Problem Statements. Accommodation is requested for all members of the High Prep teams (all amounts include GST):
+
+\begin{center}
+{\small
+\begin{tabular}{|L{1.9cm}|L{3.9cm}|C{1.4cm}|R{2.1cm}|R{2.5cm}|R{2.1cm}|}
+\hline
+\textbf{Category} & \textbf{Problem Statement / Role} & \textbf{Members} & \textbf{Registration} & \textbf{Accommodation} & \textbf{Total} \\ \hline
+\multirow{3}{*}{Admin} & Technical Secretary & 1 & \rs~944 & -- & \rs~944 \\ \cline{2-6}
+ & Contingent Leader & 1 & \rs~944 & -- & \rs~944 \\ \cline{2-6}
+ & Deputy Contingent Leaders & 2 & \rs~1,888 & -- & \rs~1,888 \\ \hline
+\multicolumn{2}{|l|}{\textbf{Subtotal (Admin)}} & \textbf{4} & \textbf{\rs~3,776} & -- & \textbf{\rs~3,776} \\ \hline
+\multirow{4}{*}{High Prep} & High Prep PS 1 & 8 & \rs~7,552 & \rs~25,200 & \rs~32,752 \\ \cline{2-6}
+ & High Prep PS 2 & 8 & \rs~7,552 & \rs~25,200 & \rs~32,752 \\ \cline{2-6}
+ & High Prep PS 3 & 8 & \rs~7,552 & \rs~25,200 & \rs~32,752 \\ \cline{2-6}
+ & High Prep PS 4 & 8 & \rs~7,552 & \rs~25,200 & \rs~32,752 \\ \hline
+\multicolumn{2}{|l|}{\textbf{Subtotal (High Prep)}} & \textbf{32} & \textbf{\rs~30,208} & \textbf{\rs~1,00,800} & \textbf{\rs~1,31,008} \\ \hline
+\multirow{5}{*}{Mid Prep} & Mid Prep PS 1 & 6 & \rs~5,664 & -- & \rs~5,664 \\ \cline{2-6}
+ & Mid Prep PS 2 & 6 & \rs~5,664 & -- & \rs~5,664 \\ \cline{2-6}
+ & Mid Prep PS 3 & 6 & \rs~5,664 & -- & \rs~5,664 \\ \cline{2-6}
+ & Mid Prep PS 4 & 6 & \rs~5,664 & -- & \rs~5,664 \\ \cline{2-6}
+ & Mid Prep PS 5 & 6 & \rs~5,664 & -- & \rs~5,664 \\ \hline
+\multicolumn{2}{|l|}{\textbf{Subtotal (Mid Prep)}} & \textbf{30} & \textbf{\rs~28,320} & -- & \textbf{\rs~28,320} \\ \hline
+\multicolumn{2}{|l|}{\textbf{Total}} & \textbf{66} & \textbf{\rs~62,304} & \textbf{\rs~1,00,800} & \textbf{\rs~1,63,104} \\ \hline
+\end{tabular}}
+\end{center}
+
+The teams for each Problem Statement are selected as per Appendix 1-B of the Students' Gymkhana Constitution and evaluated by the Faculty Advisors, Inter IIT Tech Meet and the Associate Dean (Student Affairs).
+
+%================ ANNEXURE II ================
+\annexure{II}{Relevant extracts of the Inter IIT Tech Meet 15.0 Rulebook}
+\begin{itemize}
+  \item Page 6: Sections 3.4 Contingent Details and 3.5 Registration
+  \item Page 7: Section 3.5 Registration (contd.) and 3.6 Registration Details
+  \item Page 8: Sections 3.6.1 Registration of Offline Attendees and 3.7 Payment Gateway
+\end{itemize}
+
+\attachpdf{\rulebookfile}{pages=6-8,scale=0.82,pagecommand={\thispagestyle{fancy}}}
+  {Upload rulebook\_tm15.pdf to attach rulebook pages 6--8 here.}
+
+%================ ANNEXURE III ================
+\annexure{III}{Budget allocation OM, 2026-27}
+Office Memorandum IITJ/OS/OM/Budget Allocation/2026-27/01 dated 29th April 2026 from the Dean of Student Affairs, allocating \rs~8 lakh to the Inter IIT Tech Meet under head J.1 (Other Student Activities), is attached on the following pages.
+
+\attachpdf{\omfile}{pages=-,scale=0.9,pagecommand={\thispagestyle{empty}}}
+  {Upload budget\_allocation\_om\_2026\_27.pdf to attach the OM here.}
+
+%================ SIGNATURES ================
+\clearpage
+\noindent\signature{\GSname}{General Secretary}{ACT Council}\par
+\noindent\signature{\FAIIname}{Faculty Advisor}{Inter IIT Tech Meet}\hfill
+\signature{\FAIIbname}{Faculty Advisor}{Inter IIT Tech Meet}\par
+\noindent\signature{\ADname}{Associate Dean}{Student Affairs}\par
+\noindent\signature{\Deanname}{Dean}{Student Affairs}
+
+\end{document}
